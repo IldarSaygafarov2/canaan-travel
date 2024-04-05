@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    Centrum-holidays
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+    <main class="booking__main">
+        <section class="booking__main-intro">
+            <h1 class="booking__main-title">{% trans 'Бронирование'|upper %}</h1>
+        </section>
+        <section class="booking__main-application">
+            <form class="container booking__main-application-form">
+                <h2 class="booking__main-application-form-title">{% trans 'Заполните поля для резерва тура' %}</h2>
+                <input type="text" placeholder="{% trans 'Ваше имя' %}*" required>
+                <input type="date" placeholder="{% trans 'Ваше имя' %}*" required>
+                <input type="email" placeholder="{% trans 'Ваш E-mail' %}*" required>
+                <input type="tel" placeholder="{% trans 'Ваш номер телефона' %}*" required>
+                <textarea type="text" rows="5" placeholder="{% trans 'Комментарий и пожелание' %}"></textarea>
+                <button>{% trans 'Отправить' %}</button>
+            </form>
+        </section>
+    </main>
+{% endblock %}

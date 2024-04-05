@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-06 03:50+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\templates\core\about.html:9 .\templates\base.html:33
+msgid "О нас"
+msgstr "About us"
+
+#: .\core\templates\core\about.html:16
+msgid "Коротко о нас"
+msgstr "Briefly about us"
+
+#: .\core\templates\core\about.html:33
+msgid "Наши ценности"
+msgstr "Our values"
+
+#: .\core\templates\core\about.html:43
+msgid "Наши услуги"
+msgstr "Our services"
+
+#: .\core\templates\core\about.html:73
+#, fuzzy
+#| msgid "Наши партнеры"
+msgid "Наши преимущества"
+msgstr "Our partners"
+
+#: .\core\templates\core\about.html:83
+msgid "Среди наших почётных клиентов"
+msgstr "Among our honorable clients"
+
+#: .\core\templates\core\about.html:110
+msgid "Заказать тур"
+msgstr "Book a tour"
+
+#: .\core\templates\core\booking.html:13 .\templates\base.html:35
+msgid "Бронирование"
+msgstr "Booking"
+
+#: .\core\templates\core\booking.html:17
+msgid "Заполните поля для резерва тура"
+msgstr "Fill in the fields to reserve a tour"
+
+#: .\core\templates\core\booking.html:18 .\core\templates\core\booking.html:19
+#: .\core\templates\core\index.html:163
+msgid "Ваше имя"
+msgstr "Your name"
+
+#: .\core\templates\core\booking.html:20
+#, fuzzy
+#| msgid "Ваш адрес E-mail"
+msgid "Ваш E-mail"
+msgstr "Your E-mail"
+
+#: .\core\templates\core\booking.html:21 .\core\templates\core\index.html:164
+msgid "Ваш номер телефона"
+msgstr "Your phone number"
+
+#: .\core\templates\core\booking.html:22
+msgid "Комментарий и пожелание"
+msgstr "Comment and wish"
+
+#: .\core\templates\core\booking.html:23 .\core\templates\core\index.html:165
+msgid "Отправить"
+msgstr "Send"
+
+#: .\core\templates\core\index.html:14
+msgid "Популярные направления"
+msgstr "Popular destinations"
+
+#: .\core\templates\core\index.html:31
+msgid "Популярные туры"
+msgstr "Popular tours"
+
+#: .\core\templates\core\index.html:40 .\core\templates\core\index.html:68
+msgid "дней"
+msgstr "days"
+
+#: .\core\templates\core\index.html:40 .\core\templates\core\index.html:68
+msgid "ночей"
+msgstr "nights"
+
+#: .\core\templates\core\index.html:52
+msgid "Специальное предложение"
+msgstr "Special offer"
+
+#: .\core\templates\core\index.html:53
+msgid "Путешествуйте дешевле!"
+msgstr "Travel cheaper!"
+
+#: .\core\templates\core\index.html:54
+msgid "УЗНАТЬ БОЛЬШЕ"
+msgstr "TO LEARN MORE"
+
+#: .\core\templates\core\index.html:59
+msgid "Мы рекомендуем"
+msgstr "We recommend"
+
+#: .\core\templates\core\index.html:78
+msgid "Узнайте о Востоке больше"
+msgstr "Find out more about the East"
+
+#: .\core\templates\core\index.html:99
+msgid "Узнайте о Востоке больше вместе с нами"
+msgstr "Find out more about the East with us"
+
+#: .\core\templates\core\index.html:101
+msgid ""
+"\n"
+"                    Centrum-Holidays — туристическая компания полного цикла, "
+"ставящая перед собой\n"
+"                    цель открыть красоту всего мира для каждого человека "
+"сегодня. Мы стремимся ближе познакомить Восток\n"
+"                    и\n"
+"                    Запад, предлагая путешествия по Центральной Азии "
+"туристам из СНГ, Европы и Америки и поездки по\n"
+"                    всему\n"
+"                    миру жителям Центральной Азии.\n"
+"                "
+msgstr ""
+"\n"
+" Centrum-Holidays is a full-service travel company, putting itself before "
+"itself\n"
+"the goal is to discover the beauty of the whole world for every persontoday. "
+"We strive to introduce the East closer\n"
+"and\n"
+"The West, offering travel in Central Asiatourists from the CIS, Europe and "
+"America and trips around\n"
+"to everything\n"
+"peace to the people of Central Asia.\n"
+" "
+
+#: .\core\templates\core\index.html:111
+msgid ""
+"\n"
+"                    Мы работаем как с отдельными туристами, так и с "
+"компаниями. Наличие\n"
+"                    собственных авиакассы, автотранспорта и сотрудничество с "
+"лучшими гидами и отелями помогают нам\n"
+"                    формировать уникальные предложения в индивидуальном "
+"порядке.\n"
+"                "
+msgstr ""
+"\n"
+"We work both with individual tourists and withcompanies. Availability\n"
+"own ticket offices, vehicles and cooperation withthe best guides and hotels "
+"help us\n"
+"to create unique offers in an individual wayOkay.\n"
+" "
+
+#: .\core\templates\core\index.html:119
+msgid "Преимущество нашего обслуживания"
+msgstr "The advantage of our service"
+
+#: .\core\templates\core\index.html:137
+msgid "Подпишитесь на рассылку интересных предложений"
+msgstr "Subscribe to the newsletter for interesting offers"
+
+#: .\core\templates\core\index.html:139
+msgid "Ваш адрес E-mail"
+msgstr "Yoru E-mail"
+
+#: .\core\templates\core\index.html:140
+msgid "Подписаться"
+msgstr "Subscribe"
+
+#: .\core\templates\core\index.html:145 .\templates\base.html:119
+msgid "Блог"
+msgstr "Blog"
+
+#: .\core\templates\core\index.html:160
+msgid "Хотите забронировать тур?"
+msgstr "Want to book a tour?"
+
+#: .\core\templates\core\index.html:161
+msgid "Заполните небольшую форму, и мы подберем тур именно для вас"
+msgstr "Fill out a short form and we will select a tour just for you"
+
+#: .\core\templates\core\index.html:170
+msgid "Наши партнеры"
+msgstr "Our partners"
+
+#: .\core\templates\core\reviews.html:15 .\templates\base.html:34
+msgid "Отзывы"
+msgstr "Reviews"
+
+#: .\templates\base.html:59
+msgid "Туры в Узбекистан с Centrum-Holidays"
+msgstr "Tours to Uzbekistan with Centrum-Holidays"
+
+#: .\templates\base.html:60
+msgid "Откройте для себя сказочный Восток!"
+msgstr "Discover the fabulous East!"
+
+#: .\templates\base.html:61
+msgid "Куда держим курс?"
+msgstr "Where are we headed?"
+
+#: .\templates\base.html:62
+msgid "Поиск"
+msgstr "Search"
+
+#: .\templates\base.html:66
+msgid "лет на рынке"
+msgstr "years on the market"
+
+#: .\templates\base.html:69
+msgid "отелей"
+msgstr "hotels"
+
+#: .\templates\base.html:72
+msgid "гидов"
+msgstr "guides"
+
+#: .\templates\base.html:84
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\templates\base.html:112
+msgid "О компании"
+msgstr "About company"
+
+#: .\templates\base.html:113
+msgid "Наша миссия"
+msgstr "Our mission"
+
+#: .\templates\base.html:114
+msgid "Карта сайта"
+msgstr "Site map"
+
+#: .\templates\base.html:120
+msgid "Информация туристам"
+msgstr "Information for tourists"
+
+#: .\templates\base.html:121
+msgid "Туры в Узбекистан"
+msgstr "Tours to Uzbekistan"
+
+#: .\templates\base.html:122
+msgid "Достопримечательности"
+msgstr "Attractions"
+
+#: .\templates\base.html:126
+msgid ""
+"Информация туристам Туры в Узбекистан Достопримечательности Наша компания "
+"имеет все необходимые лицензии и сертификаты качества."
+msgstr ""
+"Information for tourists Tours to Uzbekistan Sights Our companyhas all the "
+"necessary licenses and quality certificates."
+
+#: .\templates\base.html:127
+msgid "Независимые отзывы о нас читайте на"
+msgstr "Read independent reviews about us at"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:247
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
