@@ -1,8 +1,54 @@
-from django.shortcuts import render
+import requests
+from django.conf import settings
+from django.shortcuts import render, redirect
+
 from . import models
 
 
 # Create your views here.
+
+
+def send_mail(request):
+    data = request.POST
+    msg = f'Почта отправленная с сайта: {data["email"]}'
+    requests.post(settings.CHANNEL_API_LINK.format(
+        token=settings.BOT_TOKEN,
+        channel_id=settings.CHANNEL_ID,
+        text=msg
+    ))
+
+    return redirect('home')
+
+
+def send_username_and_phone(request):
+    data = request.POST
+
+    msg = f"Имя пользователя: {data['username']}\nНомер телефона: {data['phone']}"
+    requests.post(settings.CHANNEL_API_LINK.format(
+        token=settings.BOT_TOKEN,
+        channel_id=settings.CHANNEL_ID,
+        text=msg
+    ))
+    return redirect('home')
+
+
+def book_tour(request):
+    data = request.POST
+
+    msg = f"""
+Имя: {data['username']}
+Дата: {data['date']}
+Почта: {data['email']}
+Номер телефона: {data['phone']}
+Комментарий: {data['body']}
+"""
+    requests.post(settings.CHANNEL_API_LINK.format(
+        token=settings.BOT_TOKEN,
+        channel_id=settings.CHANNEL_ID,
+        text=msg
+    ))
+    return redirect('home')
+
 
 
 def home_view(request):

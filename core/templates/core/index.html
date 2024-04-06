@@ -135,8 +135,9 @@
         <section class="newsletter">
             <div class="newsletter__content">
                 <h2 class="newsletter__title">{% trans 'Подпишитесь на рассылку интересных предложений' %}</h2>
-                <form action="" class="newsletter__form"><input type="text"
-                                                                placeholder="{% trans 'Ваш адрес E-mail' %}">
+                <form action="{% url 'send_mail' %}" class="newsletter__form" method="post">
+                    {% csrf_token %}
+                    <input type="text" placeholder="{% trans 'Ваш адрес E-mail' %}" name="email">
                     <button>{% trans 'Подписаться' %}</button>
                 </form>
             </div>
@@ -159,9 +160,10 @@
             <div class="container reservation__content">
                 <h2 class="reservation__title">{% trans 'Хотите забронировать тур?' %}</h2>
                 <span>{% trans 'Заполните небольшую форму, и мы подберем тур именно для вас' %}</span>
-                <form action="" class="reservation__form">
-                    <input type="text" placeholder="{% trans 'Ваше имя' %}">
-                    <input type="text" placeholder="{% trans 'Ваш номер телефона' %}">
+                <form action="{% url 'send_username_and_phone' %}" class="reservation__form" method="post">
+                    {% csrf_token %}
+                    <input type="text" placeholder="{% trans 'Ваше имя' %}" name="username">
+                    <input type="text" placeholder="{% trans 'Ваш номер телефона' %}" name="phone">
                     <button>{% trans 'Отправить' %}</button>
                 </form>
             </div>

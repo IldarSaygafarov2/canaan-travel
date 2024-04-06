@@ -135,3 +135,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+BOT_TOKEN = "6565957524:AAFYCcXm9yykA3FAm7jucAeVTWg3r9xqMM0"
+CHANNEL_ID = -1002122123292
+CHANNEL_API_LINK = (
+    "https://api.telegram.org/bot{token}/sendMessage?chat_id={channel_id}&text={text}"
+)
