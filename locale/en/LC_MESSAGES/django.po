@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-06 03:50+0500\n"
+"POT-Creation-Date: 2024-04-06 16:02+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\core\templates\core\about.html:9 .\templates\base.html:33
+#: .\core\templates\core\about.html:9 .\templates\base.html:35
 msgid "О нас"
 msgstr "About us"
 
@@ -26,29 +26,249 @@ msgstr "About us"
 msgid "Коротко о нас"
 msgstr "Briefly about us"
 
-#: .\core\templates\core\about.html:33
+#: .\core\templates\core\about.html:18 .\core\templates\core\about.html:27
+msgid ""
+"\n"
+"            Туристическая компания Canaan Travel начала свою деятельность в "
+"2006 году. Мы поставили перед собой цель\n"
+"            открыть все разнообразие мира для каждого человека — перед "
+"узбекистанцами открыть двери в другие страны,\n"
+"            а для иностранцев — в Центральную Азию. Таким образом "
+"путешественник знакомится с культурой других\n"
+"            народов, что помогает лучше понимать друг друга в формате "
+"«человек-человек» безвсяких национальных\n"
+"            признаков.\n"
+"            "
+msgstr ""
+"\n"
+"The travel company Canaan Travel began its activities in 2006. We set a goal "
+"for ourselves\n"
+"open all the diversity of the world for every person - beforeUzbeks open "
+"doors to other countries\n"
+"and for foreigners - to Central Asia. Thusa traveler gets to know the "
+"culture of others\n"
+"peoples, which helps to better understand each other in the formatman-man "
+"without any national\n"
+"signs.\n"
+" "
+
+#: .\core\templates\core\about.html:36
+msgid ""
+"\n"
+"            В 2019 году мы организовали свыше 1 100 туров более чем для 5 "
+"500 туристов. На начало 2020 года наш штат\n"
+"            превысил 50 человек. В период карантина мы не прекращали свою "
+"деятельность и организовали более 20\n"
+"            чартерных перелётов.\n"
+"            "
+msgstr ""
+"\n"
+" In 2019, we organized over 1,100 tours for more than 5 500 tourists. At the "
+"beginning of 2020, our staff\n"
+"exceeded 50 people. During the quarantine period we did not stop our "
+"activities and organized more than 20\n"
+"charter flights.\n"
+" "
+
+#: .\core\templates\core\about.html:43
+msgid ""
+"\n"
+"            Мы верим, что глобализация — неизбежный и максимально полезный "
+"этап развития мирового общества. Ведь\n"
+"            только научившись понимать и уважать друг друга, мы сможем "
+"сообща построить лучший мир, сохранив его для\n"
+"            наших потомков.\n"
+"            "
+msgstr ""
+"We believe that globalization is inevitable and most beneficialstage of "
+"development of world society. After all\n"
+"Only by learning to understand and respect each other can wetogether build a "
+"better world, preserving it for\n"
+"our descendants.\n"
+" "
+
+#: .\core\templates\core\about.html:49
 msgid "Наши ценности"
 msgstr "Our values"
 
-#: .\core\templates\core\about.html:43
+#: .\core\templates\core\about.html:51
+msgid ""
+"Открытость — для нас важно работать прозрачно и быть честными по отношению к "
+"каждому партнёру и\n"
+"                клиенту.Доступность — мы всегда предложим нашему клиенту "
+"наиболее приятные цены."
+msgstr ""
+"Openness - it is important for us to work transparently and be honest withto "
+"each partner and\n"
+" to the client. Availability - we will always offer our client the best "
+"prices."
+
+#: .\core\templates\core\about.html:53
+msgid ""
+"Комплексность — наша команда подходит профессионально ко всем задачам по "
+"организации вашего\n"
+"                путешествия и всегда готова предложить максимальный пакет "
+"услуг."
+msgstr ""
+"Complexity - our team approaches all tasks professionallyyour organization\n"
+"travelling and always ready to offer the maximum packageservices."
+
+#: .\core\templates\core\about.html:55
+msgid ""
+"Осознанность — на каждом этапе организации туризма мы придерживаемся правил"
+msgstr ""
+"Awareness - at every stage of tourism organization we adhere to the rules"
+
+#: .\core\templates\core\about.html:56
+msgid ""
+"Travelife — сохранение природных и культурных объектов и минимизация вредных "
+"воздействий человека на\n"
+"                окружающую среду."
+msgstr ""
+"Travelife - preservation of natural and cultural sites and minimization of "
+"harmfulhuman impact on\n"
+"                environment."
+
+#: .\core\templates\core\about.html:59
 msgid "Наши услуги"
 msgstr "Our services"
 
-#: .\core\templates\core\about.html:73
-#, fuzzy
-#| msgid "Наши партнеры"
-msgid "Наши преимущества"
-msgstr "Our partners"
+#: .\core\templates\core\about.html:62
+msgid ""
+"\n"
+"                <span>Открытость</span> — для нас важно работать прозрачно и "
+"быть честными по отношению к каждому\n"
+"                партнёру и клиенту.Доступность — мы всегда предложим нашему "
+"клиенту наиболее приятные цены.\n"
+"                "
+msgstr ""
+"\n"
+" <span>Openness</span> - it is important for us to work transparently and be "
+"honest with everyone\n"
+"partner and client. Availability - we will always offer our The most "
+"favorable prices for the client.\n"
+" "
 
-#: .\core\templates\core\about.html:83
+#: .\core\templates\core\about.html:68
+#| msgid ""
+#| "                <li>Бронирование и оформление авиа- и ж/д билетов по "
+#| "любым направлениям;</li>\n"
+#| "                <li>Аренда автотранспорта любого класса по маршруту тура "
+#| "в стране;</li>\n"
+#| "                <li>Визовая поддержка;</li>\n"
+#| "                <li>Встреча в VIP/CIP залах аэропортов;</li>\n"
+#| "                <li>Экскурсионное обслуживание и услуги гидов-"
+#| "переводчиков;</li>\n"
+#| "                <li>Бронирование и размещение в гостиницах различного "
+#| "класса;</li>\n"
+#| "                <li>Организация досуга, культурно-развлекательных "
+#| "мероприятий;</li>\n"
+#| "                <li>Организация шоппинга и гастрономических экскурсий.</"
+#| "li>\n"
+#| "                "
+msgid ""
+"\n"
+"                <li>Бронирование и оформление авиа- и ж/д билетов по любым "
+"направлениям;</li>\n"
+"                <li>Аренда автотранспорта любого класса по маршруту тура в "
+"стране;</li>\n"
+"                <li>Визовая поддержка;</li>\n"
+"                <li>Встреча в VIP/CIP залах аэропортов;</li>\n"
+"                <li>Экскурсионное обслуживание и услуги гидов-переводчиков;</"
+"li>\n"
+"                <li>Бронирование и размещение в гостиницах различного класса;"
+"</li>\n"
+"                <li>Организация досуга, культурно-развлекательных "
+"мероприятий;</li>\n"
+"                <li>Организация шоппинга и гастрономических экскурсий.</li>\n"
+"                "
+msgstr ""
+"<li>Reservation and registration of air and railway tickets for any "
+"directions;</li>\n"
+" <li>Rental vehicles of any class along the tour route in country;</li>\n"
+" <li>Visa support;</li>\n"
+" <li>Meeting in VIP/CIP lounges of airports;</li>\n"
+" <li>Excursion services and guide-translator services;</li>\n"
+" <li>Reservation and accommodation in hotels of various classes;</li>\n"
+" <li>Organization of leisure, cultural and entertainment events;</li>\n"
+" <li>Organization of shopping and gastronomic excursions.</li>\n"
+" "
+
+#: .\core\templates\core\about.html:81
+msgid ""
+"Наша компания предлагает все необходимые для комфортных путешествий услуги. "
+"В рамках организации\n"
+"                индивидуальных и групповых туров"
+msgstr ""
+"Our company offers all the services necessary for comfortable travel.Within "
+"the organization\n"
+"individual and group tours"
+
+#: .\core\templates\core\about.html:84
+msgid ""
+"\n"
+"                <li>Разработка концепции мероприятия;</li>\n"
+"                <li>Подбор конференц-площадки мероприятия;</li>\n"
+"                <li>Калькуляция бюджета, составление сметы;</li>\n"
+"                <li>Оформление интерьеров;</li>\n"
+"                <li>Организация выступления артистов, профессиональных "
+"ведущих и звёзд;</li>\n"
+"                <li>Обеспечение техническим оборудованием;</li>\n"
+"                <li>Заказ сувенирной и рекламной продукции;</li>\n"
+"                <li>Проведение тимбилдингов.</li>\n"
+"                <li>Организация шоппинга и гастрономических экскурсий.</li>\n"
+"                "
+msgstr ""
+"\n"
+" <li>Development of the event concept;</li>\n"
+" <li>Selection of conference venue for the event;</li>\n"
+" <li>Budget calculation, budgeting;</li>\n"
+" <li>Interior design;</li>\n"
+"<li>Organization of performances by professional artistsleaders and stars;</"
+"li>\n"
+" <li>Providing technical equipment;</li>\n"
+" <li>Ordering souvenirs and promotional products;</li>\n"
+" <li>Conducting team building activities.</li>\n"
+" <li>Organization of shopping and gastronomic excursions.</li>\n"
+" "
+
+#: .\core\templates\core\about.html:97
+msgid "Наши преимущества"
+msgstr "Our advantages"
+
+#: .\core\templates\core\about.html:100
+#| msgid ""
+#| "                <li>Многолетний опыт работы;</li>\n"
+#| "                <li>Масштабность деятельности;</li>\n"
+#| "                <li>Собственная авиакасса;</li>\n"
+#| "                <li>Уникальные маршруты по Великому Шёлковому Пути;</li>\n"
+#| "                <li>Грузовые авиаперевозки</li>\n"
+#| "                "
+msgid ""
+"\n"
+"                <li>Многолетний опыт работы;</li>\n"
+"                <li>Масштабность деятельности;</li>\n"
+"                <li>Собственная авиакасса;</li>\n"
+"                <li>Уникальные маршруты по Великому Шёлковому Пути;</li>\n"
+"                <li>Грузовые авиаперевозки</li>\n"
+"                "
+msgstr ""
+" <li>Many years of experience;</li>\n"
+" <li>Scale of activity;</li>\n"
+" <li>Own ticket office;</li>\n"
+" <li>Unique routes along the Great Silk Road;</li>\n"
+" <li>Air cargo</li>\n"
+" "
+
+#: .\core\templates\core\about.html:109
 msgid "Среди наших почётных клиентов"
 msgstr "Among our honorable clients"
 
-#: .\core\templates\core\about.html:110
+#: .\core\templates\core\about.html:136 .\core\templates\core\mission.html:64
 msgid "Заказать тур"
 msgstr "Book a tour"
 
-#: .\core\templates\core\booking.html:13 .\templates\base.html:35
+#: .\core\templates\core\booking.html:13 .\templates\base.html:39
 msgid "Бронирование"
 msgstr "Booking"
 
@@ -62,8 +282,6 @@ msgid "Ваше имя"
 msgstr "Your name"
 
 #: .\core\templates\core\booking.html:20
-#, fuzzy
-#| msgid "Ваш адрес E-mail"
 msgid "Ваш E-mail"
 msgstr "Your E-mail"
 
@@ -179,7 +397,7 @@ msgstr "Yoru E-mail"
 msgid "Подписаться"
 msgstr "Subscribe"
 
-#: .\core\templates\core\index.html:145 .\templates\base.html:119
+#: .\core\templates\core\index.html:145 .\templates\base.html:125
 msgid "Блог"
 msgstr "Blog"
 
@@ -195,67 +413,180 @@ msgstr "Fill out a short form and we will select a tour just for you"
 msgid "Наши партнеры"
 msgstr "Our partners"
 
-#: .\core\templates\core\reviews.html:15 .\templates\base.html:34
-msgid "Отзывы"
-msgstr "Reviews"
-
-#: .\templates\base.html:59
-msgid "Туры в Узбекистан с Centrum-Holidays"
-msgstr "Tours to Uzbekistan with Centrum-Holidays"
-
-#: .\templates\base.html:60
-msgid "Откройте для себя сказочный Восток!"
-msgstr "Discover the fabulous East!"
-
-#: .\templates\base.html:61
-msgid "Куда держим курс?"
-msgstr "Where are we headed?"
-
-#: .\templates\base.html:62
-msgid "Поиск"
-msgstr "Search"
-
-#: .\templates\base.html:66
-msgid "лет на рынке"
-msgstr "years on the market"
-
-#: .\templates\base.html:69
-msgid "отелей"
-msgstr "hotels"
-
-#: .\templates\base.html:72
-msgid "гидов"
-msgstr "guides"
-
-#: .\templates\base.html:84
-msgid "Контакты"
-msgstr "Contacts"
-
-#: .\templates\base.html:112
-msgid "О компании"
-msgstr "About company"
-
-#: .\templates\base.html:113
+#: .\core\templates\core\mission.html:10 .\templates\base.html:119
 msgid "Наша миссия"
 msgstr "Our mission"
 
-#: .\templates\base.html:114
+#: .\core\templates\core\mission.html:17
+msgid "Открыть мир, сохранив его"
+msgstr "Open the world by saving it"
+
+#: .\core\templates\core\mission.html:19
+msgid ""
+"\n"
+"                Центральная Азия — древнейший оплот науки и культуры. Многие "
+"века назад здесь совершались гениальные\n"
+"                открытия, сооружались уникальные архитектурные шедевры, "
+"появлялись новые веяния и ремёсла, ставшие\n"
+"                столпами человеческой цивилизации.\n"
+"                "
+msgstr ""
+"\n"
+"Central Asia is the oldest stronghold of science and culture. Many Centuries "
+"ago, great things were done here\n"
+"discoveries, unique architectural masterpieces were built, new trends and "
+"crafts appeared that became\n"
+"pillars of human civilization.\n"
+" "
+
+#: .\core\templates\core\mission.html:25
+msgid ""
+"\n"
+"                <span>Мы считаем, что наш регион</span> — достояние всего "
+"мира. Именно по этой причине мы хотим\n"
+"                познакомить с этими землями каждого жителя Земли. При этом "
+"мы не забываем ни на минуту о том, что под\n"
+"                «каждым жителем Земли» подразумеваются и будущие поколения. "
+"Вот почему мы уделяем так много внимания\n"
+"                устойчивому туризму — направлению деятельности, которое "
+"призвано сохранить природу, культуру и историю\n"
+"                нашей родной земли.\n"
+"                "
+msgstr ""
+"\n"
+" <span>We believe that our region</span> is the asset of everything peace. "
+"This is the reason we want\n"
+"to introduce every inhabitant of the Earth to these lands. At the same time, "
+"We don't forget for a minute what's underneath\n"
+"Every inhabitant of the Earth also means future generations.That's why we "
+"pay so much attention\n"
+"sustainable tourism is an activity that designed to preserve nature, culture "
+"and history\n"
+"our native land.\n"
+" "
+
+#: .\core\templates\core\mission.html:32
+msgid "Цели компании"
+msgstr "Company goals"
+
+#: .\core\templates\core\mission.html:35
+msgid ""
+"\n"
+"                    <li>Популяризация стран региона</li>\n"
+"                    <li>Сохранение природы</li>\n"
+"                    <li>Глобализация</li>\n"
+"                    "
+msgstr ""
+"\n"
+" <li>Popularization of countries in the region</li>\n"
+" <li>Nature conservation</li>\n"
+" <li>Globalization</li>\n"
+" "
+
+#: .\core\templates\core\mission.html:42
+msgid "Видение"
+msgstr "Vision"
+
+#: .\core\templates\core\mission.html:44
+msgid ""
+"\n"
+"                Мир огромен и прекрасен, но возможности человека ограничены. "
+"Увидеть каждый уголок планеты человеку не\n"
+"                удастся, но мы ставим перед собой задачу сделать всё "
+"возможное для этого. Для достижения этой цели\n"
+"                компания использует следующие средства:\n"
+"                "
+msgstr ""
+"\n"
+"The world is huge and beautiful, but human capabilities are limited.“It’s "
+"impossible for a person to see every corner of the planet\n"
+"”it will succeed, but we set ourselves the task of doing everythingpossible "
+"for this. To achieve this goal\n"
+"The company uses the following means:\n"
+" "
+
+#: .\core\templates\core\mission.html:52
+msgid ""
+"\n"
+"<li>Помощь в путешествиях иностранцам и местным жителям;</li>\n"
+"<li>Просветительская деятельность — публикация информационных материалов и "
+"поддержка проектов в\n"
+"    сферах истории, востоковедения, науки и техники;\n"
+"</li>\n"
+"<li>Благотворительные программы по защите экологии;</li>\n"
+"<li>Сотрудничество с Travelife и фондами защиты природы;</li>\n"
+"<li>Повышение профессионализма сотрудников и качества услуг;</li>\n"
+"<li>Повышение интереса к Узбекистану в мире.</li>\n"
+msgstr ""
+"\n"
+"<li>Travel assistance for foreigners and local residents;</li>\n"
+"<li>Educational activities - publication of information materials and "
+"project support\n"
+"the fields of history, oriental studies, science and technology;\n"
+"</li>\n"
+"<li>Charity programs for environmental protection;</li>\n"
+"<li>Collaboration with Travelife and nature protection funds;</li>\n"
+"<li>Improving the professionalism of employees and the quality of services;</"
+"li>\n"
+"<li>Increasing interest in Uzbekistan in the world.</li>\n"
+
+#: .\core\templates\core\reviews.html:15 .\templates\base.html:36
+msgid "Отзывы"
+msgstr "Reviews"
+
+#: .\templates\base.html:63
+msgid "Туры в Узбекистан с Centrum-Holidays"
+msgstr "Tours to Uzbekistan with Centrum-Holidays"
+
+#: .\templates\base.html:64
+msgid "Откройте для себя сказочный Восток!"
+msgstr "Discover the fabulous East!"
+
+#: .\templates\base.html:65
+msgid "Куда держим курс?"
+msgstr "Where are we headed?"
+
+#: .\templates\base.html:66
+msgid "Поиск"
+msgstr "Search"
+
+#: .\templates\base.html:70
+msgid "лет на рынке"
+msgstr "years on the market"
+
+#: .\templates\base.html:73
+msgid "отелей"
+msgstr "hotels"
+
+#: .\templates\base.html:76
+msgid "гидов"
+msgstr "guides"
+
+#: .\templates\base.html:88
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\templates\base.html:117
+msgid "О компании"
+msgstr "About company"
+
+#: .\templates\base.html:120
 msgid "Карта сайта"
 msgstr "Site map"
 
-#: .\templates\base.html:120
+#: .\templates\base.html:126
 msgid "Информация туристам"
 msgstr "Information for tourists"
 
-#: .\templates\base.html:121
+#: .\templates\base.html:128
 msgid "Туры в Узбекистан"
 msgstr "Tours to Uzbekistan"
 
-#: .\templates\base.html:122
+#: .\templates\base.html:131
 msgid "Достопримечательности"
 msgstr "Attractions"
 
-#: .\templates\base.html:126
+#: .\templates\base.html:135
 msgid ""
 "Информация туристам Туры в Узбекистан Достопримечательности Наша компания "
 "имеет все необходимые лицензии и сертификаты качества."
@@ -263,7 +594,7 @@ msgstr ""
 "Information for tourists Tours to Uzbekistan Sights Our companyhas all the "
 "necessary licenses and quality certificates."
 
-#: .\templates\base.html:127
+#: .\templates\base.html:136
 msgid "Независимые отзывы о нас читайте на"
 msgstr "Read independent reviews about us at"
 
