@@ -33,6 +33,7 @@
         </a>
         <ul class="nav__list">
             <li class="nav__list-item"><a href="{% url 'about' %}" class="nav__list-link">{% trans 'О нас' %}</a></li>
+            <li class="nav__list-item"><a href="{% url 'tours' %}" class="nav__list-link">{% trans 'Туры' %}</a></li>
             <li class="nav__list-item"><a href="{% url 'reviews' %}" class="nav__list-link">{% trans 'Отзывы' %}</a>
             </li>
             <li class="nav__list-item"><a href="{% url 'booking' %}"
@@ -122,8 +123,8 @@
         </div>
         <div class="footer__content-item">
             <ul class="footer__content-item-list">
-                <li><a href="" class="footer__content-item-list-link"><span>{% trans 'Блог' %}</span></a></li>
-                <li><a href="" class="footer__content-item-list-link"><span>{% trans 'Информация туристам' %}</span></a>
+                <li><a href="{% url 'blog' %}" class="footer__content-item-list-link"><span>{% trans 'Блог' %}</span></a></li>
+                <li><a href="{% url 'tourists-info' %}" class="footer__content-item-list-link"><span>{% trans 'Информация туристам' %}</span></a>
                 </li>
                 <li><a href="" class="footer__content-item-list-link"><span>{% trans 'Туры в Узбекистан' %}</span></a>
                 </li>

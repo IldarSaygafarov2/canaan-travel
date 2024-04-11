@@ -62,8 +62,10 @@ class Tour(models.Model):
     price = models.IntegerField(verbose_name='Стоимость')
     days = models.PositiveSmallIntegerField(verbose_name='Дней')
     nights = models.PositiveSmallIntegerField(verbose_name='Ночей')
+    short_description = models.TextField(max_length=500, verbose_name='Краткое описание', null=True)
     is_popular = models.BooleanField(verbose_name='Популярный тур?', default=False)
     is_recommended = models.BooleanField(verbose_name='Рекомендуемый тур?', default=False)
+    destination = models.ForeignKey(Destination, on_delete=models.CASCADE, verbose_name='Направление', null=True)
     slug = models.SlugField(blank=True)
 
     def __str__(self):

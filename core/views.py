@@ -50,7 +50,6 @@ def book_tour(request):
     return redirect('home')
 
 
-
 def home_view(request):
     reviews = models.Review.objects.all()
     clients = models.Client.objects.all()
@@ -75,7 +74,11 @@ def home_view(request):
 
 
 def about_view(request):
-    return render(request, 'core/about.html')
+    clients = models.Client.objects.all()
+    context = {
+        'clients': clients
+    }
+    return render(request, 'core/about.html', context)
 
 
 def reviews_view(request):
@@ -92,3 +95,33 @@ def booking_view(request):
 
 def mission_view(request):
     return render(request, 'core/mission.html')
+
+
+def tourists_info_view(request):
+    return render(request, 'core/info.html')
+
+
+def blog_view(request):
+    articles = models.Article.objects.all()
+    context = {
+        'articles': articles
+    }
+    return render(request, 'core/blog.html', context)
+
+
+def destinations_view(request, slug):
+    destination = models.Destination.objects.get(slug=slug)
+    tours = models.Tour.objects.filter(destination=destination)
+    context = {
+        'title': destination.title,
+        'tours': tours
+    }
+    return render(request, 'core/destinations.html', context)
+
+
+def tours_view(request):
+    popular_tours = models.Tour.objects.all()
+    context = {
+        'tours': popular_tours
+    }
+    return render(request, 'core/tours.html', context)

@@ -1,5 +1,6 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
+
 from . import models
 
 
@@ -7,7 +8,8 @@ from . import models
 
 
 class TourAdmin(TranslationAdmin):
-    fields = ('title', 'price', 'days', 'nights', 'is_popular', 'is_recommended')
+    list_display = ('title', 'price', 'days', 'nights', 'is_popular', 'is_recommended')
+    prepopulated_fields = {'slug': ('title',)}
 
 
 class ArticleAdmin(TranslationAdmin):
@@ -15,7 +17,7 @@ class ArticleAdmin(TranslationAdmin):
 
 
 class DestinationAdmin(TranslationAdmin):
-    pass
+    prepopulated_fields = {'slug': ('title',)}
 
 
 class AdvantageAdmin(TranslationAdmin):

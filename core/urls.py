@@ -8,6 +8,12 @@ urlpatterns = [
     path('reviews/', views.reviews_view, name="reviews"),
     path('booking/', views.booking_view, name="booking"),
     path('mission/', views.mission_view, name="mission"),
+    path('info/', views.tourists_info_view, name='tourists-info'),
+    path('tours/', views.tours_view, name='tours'),
+    path('blog/', views.blog_view, name='blog'),
+    path('destinations/<slug:slug>/', views.destinations_view, name='destinations'),
+
+
 
     path('send_mail/', views.send_mail, name='send_mail'),
     path('send_username_and_phone/', views.send_username_and_phone, name='send_username_and_phone'),
