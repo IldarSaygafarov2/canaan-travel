@@ -80,6 +80,7 @@
         </div>
     </header>
 {% endblock %}
+
 {% block content %}
 
 {% endblock %}
@@ -126,10 +127,8 @@
                 <li><a href="{% url 'blog' %}" class="footer__content-item-list-link"><span>{% trans 'Блог' %}</span></a></li>
                 <li><a href="{% url 'tourists-info' %}" class="footer__content-item-list-link"><span>{% trans 'Информация туристам' %}</span></a>
                 </li>
-                <li><a href="" class="footer__content-item-list-link"><span>{% trans 'Туры в Узбекистан' %}</span></a>
+                <li><a href="{% url 'tours' %}" class="footer__content-item-list-link"><span>{% trans 'Туры в Узбекистан' %}</span></a>
                 </li>
-                <li><a href=""
-                       class="footer__content-item-list-link"><span>{% trans 'Достопримечательности' %}</span></a></li>
             </ul>
         </div>
         <div class="footer__content-item">

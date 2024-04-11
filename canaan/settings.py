@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # "ckeditor",
 
     'core.apps.CoreConfig',
 ]
@@ -113,7 +114,7 @@ LANGUAGES = (
     ("en", gettext("English")),
 )
 LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -141,3 +142,5 @@ CHANNEL_ID = -1002122123292
 CHANNEL_API_LINK = (
     "https://api.telegram.org/bot{token}/sendMessage?chat_id={channel_id}&text={text}"
 )
+
+# CKEDITOR_UPLOAD_PATH = "uploads/"

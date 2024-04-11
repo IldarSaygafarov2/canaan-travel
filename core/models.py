@@ -1,5 +1,5 @@
 from django.db import models
-
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -58,11 +58,12 @@ class Destination(models.Model):
 class Tour(models.Model):
     title = models.CharField(verbose_name='Заголовок', max_length=100)
     # excerpt = models.TextField(verbose_name='Краткое описание', max_length=100)
-    preview = models.ImageField(verbose_name='Заставка', upload_to='tours/')
-    price = models.IntegerField(verbose_name='Стоимость')
-    days = models.PositiveSmallIntegerField(verbose_name='Дней')
-    nights = models.PositiveSmallIntegerField(verbose_name='Ночей')
-    short_description = models.TextField(max_length=500, verbose_name='Краткое описание', null=True)
+    preview = models.ImageField(verbose_name='Заставка', upload_to='tours/', null=True, blank=True)
+    price = models.IntegerField(verbose_name='Стоимость', null=True, blank=True)
+    days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
+    nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
+    short_description = models.TextField(max_length=500, verbose_name='Краткое описание', null=True, blank=True)
+    full_description = RichTextField(verbose_name='Полное описание', blank=True, null=True)
     is_popular = models.BooleanField(verbose_name='Популярный тур?', default=False)
     is_recommended = models.BooleanField(verbose_name='Рекомендуемый тур?', default=False)
     destination = models.ForeignKey(Destination, on_delete=models.CASCADE, verbose_name='Направление', null=True)

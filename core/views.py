@@ -1,6 +1,7 @@
 import requests
 from django.conf import settings
 from django.shortcuts import render, redirect
+from django.core.paginator import Paginator
 
 from . import models
 
@@ -112,16 +113,24 @@ def blog_view(request):
 def destinations_view(request, slug):
     destination = models.Destination.objects.get(slug=slug)
     tours = models.Tour.objects.filter(destination=destination)
+
+    paginator = Paginator(tours, 8)
+    page = request.GET.get('page')
+    qs = paginator.get_page(page)
     context = {
         'title': destination.title,
-        'tours': tours
+        'tours': qs
     }
     return render(request, 'core/destinations.html', context)
 
 
 def tours_view(request):
     popular_tours = models.Tour.objects.all()
+    paginator = Paginator(popular_tours, 8)
+    page = request.GET.get('page')
+    qs = paginator.get_page(page)
+
     context = {
-        'tours': popular_tours
+        'tours': qs
     }
     return render(request, 'core/tours.html', context)

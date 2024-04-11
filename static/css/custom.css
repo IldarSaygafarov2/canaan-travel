@@ -71,3 +71,40 @@
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-color: transparent transparent blue transparent;
 }
+
+/*.tours__item-content {*/
+/*    height: 100%;*/
+/*}*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 50px 0;
+    list-style: none;
+}
+
+.pagination li {
+    margin: 0 17px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.pagination li a.page-numbers {
+    color: #2C1E1E;
+    opacity: 0.5;
+}
+
+.pagination li a.page-numbers:hover,
+.pagination li .page-numbers.current {
+    color: #846666;
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.blog__title--custom {
+    position: static;
+    color: #001fff;
+    transform: none;
+}

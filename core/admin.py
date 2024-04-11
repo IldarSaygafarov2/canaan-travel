@@ -8,7 +8,7 @@ from . import models
 
 
 class TourAdmin(TranslationAdmin):
-    list_display = ('title', 'price', 'days', 'nights', 'is_popular', 'is_recommended')
+    list_display = ('title', 'price', 'days', 'nights', 'preview', 'is_popular', 'is_recommended')
     prepopulated_fields = {'slug': ('title',)}
 
 

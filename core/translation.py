@@ -5,7 +5,7 @@ from . import models
 
 @register(models.Tour)
 class TourTranslationOptions(TranslationOptions):
-    fields = ('title',)
+    fields = ('title', 'short_description', 'full_description')
 
 
 @register(models.Advantage)

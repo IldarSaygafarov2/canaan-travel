@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
+
 {% block title %}
     Centrum-holidays
 {% endblock %}
@@ -7,8 +8,6 @@
 
 {% block content %}
     <main class="main">
-
-
         <section class="popular__destinations">
             <div class="container popular__destinations-content">
                 <h2 class="popular__destinations-title">{% trans 'Популярные направления' %}</h2>
@@ -139,7 +138,7 @@
             </div>
         </section>
         <section class="blog">
-            <h2 class="blog__title">{% trans 'Блог' %}</h2>
+            <h2 class="blog__title blog__title--custom">{% trans 'Блог' %}</h2>
             <div class="swiper mySwiper blog-swiper">
                 <div class="swiper-wrapper">
                     {% for article in articles %}
