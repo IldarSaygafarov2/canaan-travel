@@ -3,6 +3,16 @@ from modeltranslation.translator import register, TranslationOptions
 from . import models
 
 
+@register(models.Review)
+class ReviewTranslationOptions(TranslationOptions):
+    fields = ('author', 'text')
+
+
+@register(models.Hotel)
+class HotelTranslationOptions(TranslationOptions):
+    fields = ('name',)
+
+
 @register(models.Tour)
 class TourTranslationOptions(TranslationOptions):
     fields = ('title', 'short_description', 'full_description')

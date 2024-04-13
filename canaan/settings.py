@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # "ckeditor",
+    "ckeditor",
 
     'core.apps.CoreConfig',
 ]
@@ -143,4 +143,4 @@ CHANNEL_API_LINK = (
     "https://api.telegram.org/bot{token}/sendMessage?chat_id={channel_id}&text={text}"
 )
 
-# CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_UPLOAD_PATH = "uploads/"

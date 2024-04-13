@@ -10,8 +10,11 @@ urlpatterns = [
     path('mission/', views.mission_view, name="mission"),
     path('info/', views.tourists_info_view, name='tourists-info'),
     path('tours/', views.tours_view, name='tours'),
+    path('tours/<slug:slug>/', views.tour_detail, name='detail'),
     path('blog/', views.blog_view, name='blog'),
     path('destinations/<slug:slug>/', views.destinations_view, name='destinations'),
+    path('hotels/', views.hotels_view, name='hotels'),
+
 
 
 

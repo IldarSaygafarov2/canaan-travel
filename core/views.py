@@ -134,3 +134,15 @@ def tours_view(request):
         'tours': qs
     }
     return render(request, 'core/tours.html', context)
+
+
+def tour_detail(request, slug):
+    tour = models.Tour.objects.get(slug=slug)
+    context = {
+        'tour': tour
+    }
+    return render(request, 'core/detail.html', context)
+
+
+def hotels_view(request):
+    return render(request, 'core/hotels.html')

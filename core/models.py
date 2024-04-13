@@ -1,5 +1,6 @@
-from django.db import models
 from ckeditor.fields import RichTextField
+from django.db import models
+
 
 # Create your models here.
 
@@ -63,7 +64,9 @@ class Tour(models.Model):
     days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
     nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
     short_description = models.TextField(max_length=500, verbose_name='Краткое описание', null=True, blank=True)
-    full_description = RichTextField(verbose_name='Полное описание', blank=True, null=True)
+    full_description = RichTextField(verbose_name='Полное описание 1', blank=True, null=True)
+    # full_description_2 = RichTextField(verbose_name='Полное описание 2', blank=True, null=True)
+    # map_link = models.URLField(verbose_name='Ссылка для карты', null=True, blank=True)
     is_popular = models.BooleanField(verbose_name='Популярный тур?', default=False)
     is_recommended = models.BooleanField(verbose_name='Рекомендуемый тур?', default=False)
     destination = models.ForeignKey(Destination, on_delete=models.CASCADE, verbose_name='Направление', null=True)
@@ -89,3 +92,18 @@ class Article(models.Model):
     class Meta:
         verbose_name = 'Статья'
         verbose_name_plural = 'Статьи'
+
+
+
+class Hotel(models.Model):
+    name = models.CharField(verbose_name='Название', max_length=100)
+    price = models.IntegerField(verbose_name='Цена')
+    slug = models.SlugField(verbose_name='Слаг')
+    preview = models.ImageField(verbose_name='Фото', upload_to='hotels/')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Отель'
+        verbose_name_plural = 'Отели'
