@@ -145,4 +145,11 @@ def tour_detail(request, slug):
 
 
 def hotels_view(request):
-    return render(request, 'core/hotels.html')
+    hotels = models.HotelItem.objects.all()
+    paginator = Paginator(hotels, 8)
+    page = request.GET.get('page')
+    qs = paginator.get_page(page)
+    context = {
+        'tours': qs
+    }
+    return render(request, 'core/hotels.html', context)

@@ -94,8 +94,7 @@ class Article(models.Model):
         verbose_name_plural = 'Статьи'
 
 
-
-class Hotel(models.Model):
+class HotelItem(models.Model):
     name = models.CharField(verbose_name='Название', max_length=100)
     price = models.IntegerField(verbose_name='Цена')
     slug = models.SlugField(verbose_name='Слаг')
@@ -107,3 +106,4 @@ class Hotel(models.Model):
     class Meta:
         verbose_name = 'Отель'
         verbose_name_plural = 'Отели'
+

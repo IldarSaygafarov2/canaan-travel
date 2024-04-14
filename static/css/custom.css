@@ -108,3 +108,14 @@
     color: #001fff;
     transform: none;
 }
+
+.wprt-container {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wprt-container iframe {
+    width: 100%;
+}

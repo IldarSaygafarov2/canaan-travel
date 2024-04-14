@@ -8,7 +8,7 @@ class ReviewTranslationOptions(TranslationOptions):
     fields = ('author', 'text')
 
 
-@register(models.Hotel)
+@register(models.HotelItem)
 class HotelTranslationOptions(TranslationOptions):
     fields = ('name',)
 

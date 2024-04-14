@@ -35,7 +35,7 @@ class HotelAdmin(TranslationAdmin):
 
 admin.site.register(models.Review, ReviewAdmin)
 admin.site.register(models.Client)
-admin.site.register(models.Hotel, HotelAdmin)
+admin.site.register(models.HotelItem, HotelAdmin)
 admin.site.register(models.Advantage, AdvantageAdmin)
 admin.site.register(models.Destination, DestinationAdmin)
 admin.site.register(models.Tour, TourAdmin)
