@@ -9,7 +9,10 @@ class Command(BaseCommand):
             data = json.load(file)
             for item in data:
                 # print(item)
-                tour = Tour.objects.get(title_en=item['title'])
-                tour.full_description_en = item['data']
-                tour.save()
-                print(f'{tour} - updated')
+                try:
+                    tour = Tour.objects.get(title_en=item['title'])
+                    tour.full_description_en = item['data']
+                    tour.save()
+                    print(f'{tour} - updated')
+                except:
+                    continue
