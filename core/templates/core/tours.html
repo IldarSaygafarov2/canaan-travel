@@ -18,19 +18,19 @@
         </section>
         <section class="tours__main-items container">
             {% for tour in tours %}
-                <div class="popular__destinations-cards-item tours__item">
+                <a href="{% url 'tour_with_price_detail' tour.pk %}" class="popular__destinations-cards-item tours__item">
                     <img src="{{ tour.preview.url }}" alt="card-item">
                     <div class="popular__destinations-cards-item-content tours__item-content">
                         <h4 class="popular__destinations-cards-item-title">{{ tour.title }}</h4>
                         {% if not tour.price and not tour.data and not tour.nights %}
                             <p class="popular__destinations-cards-item-descr">{{ tour.short_description }}</p>
                         {% else %}
-                            <span>${{ tour.price }}</span>
+                            <span>{{ tour.price }}</span>
                             <p class="popular__destinations-cards-item-descr">{{ tour.days }} {% trans 'дней' %}
                                 / {{ tour.nights }} {% trans 'ночей' %}</p>
                         {% endif %}
                     </div>
-                </div>
+                </a>
             {% endfor %}
 
         </section>

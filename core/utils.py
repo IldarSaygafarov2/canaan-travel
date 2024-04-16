@@ -34,10 +34,10 @@ def get_tours(url):
     return res
 
 
-tashkent_tours = get_tours('https://canaan.travel/uzbekistan/samarkand')
-
-with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
-    json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
+# tashkent_tours = get_tours('https://canaan.travel/uzbekistan/samarkand')
+#
+# with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
+#     json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
 
 
 def get_hotels_last_page(url):
@@ -75,3 +75,32 @@ def get_hotels(url, page_num=1):
 # hotels = get_hotels('https://canaan.travel/ru/uzbekistan/hotels/page/21')
 # with open('../temp-data/hotels-21.json', mode='w', encoding='utf-8') as file:
 #     json.dump(hotels, file, indent=4, ensure_ascii=False)
+
+# https://saftravel.uz/ru/uzbekistan/tours
+def get_tours_with_price(url):
+    soup = get_soup(url)
+    res = []
+    items = soup.find('div', class_='tourview-tour-container').find_all('a', class_='tourview-tour-item')
+    for item in items:
+        title = item.find('div', class_='tourview-tour-title').get_text(strip=True)
+        days_nights = item.find('div', class_='tourview-tour-duration').get_text(strip=True)
+        days, nights = 0, 0
+        if days_nights:
+            days, nights = [int(x.split()[0]) for x in days_nights.split('/')]
+
+        price = item.find('div', class_='tourview-tour-cost').find('div', class_='tourview-tour-cost').get_text(strip=True)
+
+        preview = item.find('img')['data-src']
+        res.append({
+            'title': title,
+            'days': days,
+            'nights': nights,
+            'price': price,
+            'preview': preview
+        })
+    return res
+
+
+tours = get_tours_with_price('https://saftravel.uz/ru/uzbekistan/tours')
+with open('../temp-data/tours-with-price.json', mode='w', encoding='utf-8') as file:
+    json.dump(tours, file, indent=4, ensure_ascii=False)

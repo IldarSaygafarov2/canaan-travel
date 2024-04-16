@@ -18,6 +18,11 @@ class TourTranslationOptions(TranslationOptions):
     fields = ('title', 'short_description', 'full_description')
 
 
+@register(models.TourWithPrice)
+class TourWithPriceTranslationOptions(TranslationOptions):
+    fields = ('title', 'full_description')
+
+
 @register(models.Advantage)
 class AdvantageTranslationOptions(TranslationOptions):
     fields = ('title', 'body')

@@ -119,3 +119,10 @@
 .wprt-container iframe {
     width: 100%;
 }
+/*.toursDetailPage__main-content ul li p {*/
+/*    margin-top: 0;*/
+/*}*/
+.toursDetailPage__main-content ul li {
+    display: flex;
+    align-items: start;
+}

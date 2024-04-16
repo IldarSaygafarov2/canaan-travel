@@ -1,15 +1,12 @@
 import json
+import os
 
+import requests
+from django.conf import settings
 from django.core.management import BaseCommand
 from django.template.defaultfilters import slugify
 
 from core.models import HotelItem
-from core.utils import get_hotels
-
-from django.conf import settings
-import os
-
-import requests
 
 
 class Command(BaseCommand):

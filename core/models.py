@@ -58,15 +58,9 @@ class Destination(models.Model):
 
 class Tour(models.Model):
     title = models.CharField(verbose_name='Заголовок', max_length=100)
-    # excerpt = models.TextField(verbose_name='Краткое описание', max_length=100)
     preview = models.ImageField(verbose_name='Заставка', upload_to='tours/', null=True, blank=True)
-    price = models.IntegerField(verbose_name='Стоимость', null=True, blank=True)
-    days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
-    nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
     short_description = models.TextField(max_length=500, verbose_name='Краткое описание', null=True, blank=True)
     full_description = RichTextField(verbose_name='Полное описание 1', blank=True, null=True)
-    # full_description_2 = RichTextField(verbose_name='Полное описание 2', blank=True, null=True)
-    # map_link = models.URLField(verbose_name='Ссылка для карты', null=True, blank=True)
     is_popular = models.BooleanField(verbose_name='Популярный тур?', default=False)
     is_recommended = models.BooleanField(verbose_name='Рекомендуемый тур?', default=False)
     destination = models.ForeignKey(Destination, on_delete=models.CASCADE, verbose_name='Направление', null=True)
@@ -78,6 +72,113 @@ class Tour(models.Model):
     class Meta:
         verbose_name = 'Тур'
         verbose_name_plural = 'Туры'
+
+
+class TourWithPrice(models.Model):
+    title = models.CharField(verbose_name='Заголовок', max_length=100)
+    preview = models.ImageField(verbose_name='Заставка', upload_to='tours/', null=True, blank=True)
+    full_description = RichTextField(verbose_name='Детали', null=True, blank=True)
+    price = models.CharField(verbose_name='Стоимость', null=True, blank=True, max_length=10)
+    days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
+    nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
+    season = models.CharField(verbose_name='Сезон', max_length=50, null=True, blank=True)
+    stars = models.IntegerField(verbose_name='Звездность', default=0)
+    route = models.URLField(verbose_name='Ссылка маршрута тура', blank=True, null=True)
+    slug = models.SlugField(blank=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Тур с ценой'
+        verbose_name_plural = 'Туры с ценой'
+
+
+class PriceByHumanTour(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    qty = models.IntegerField(verbose_name='Количество человек')
+    price = models.IntegerField(verbose_name='Цена')
+
+    def __str__(self):
+        return f'{self.qty} чел - {self.price} USD'
+
+    class Meta:
+        verbose_name = 'Стоимость с человека'
+        verbose_name_plural = 'Стоимость с человека'
+
+
+class PlacesTourWithPrice(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    place = models.CharField(max_length=50, verbose_name='Место посещения')
+
+    def __str__(self):
+        return self.place
+
+    class Meta:
+        verbose_name = 'Место посещения тура'
+        verbose_name_plural = 'Места посещений тура'
+
+
+class DayTourWithPrice(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    name = models.CharField(verbose_name='Заголовок', max_length=100)
+    descr = models.TextField(verbose_name='Описание')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'День тура'
+        verbose_name_plural = 'Дни тура'
+
+
+class AddonTourWithPrice(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    name = models.CharField(verbose_name='Заголовок', max_length=100)
+    descr = models.TextField(verbose_name='Описание')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Дополнительная экскурсия'
+        verbose_name_plural = 'Дополнительные экскурсии'
+
+
+class TourCondition(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    text = models.TextField(verbose_name='Текст')
+
+    class Meta:
+        verbose_name = 'Условие тура'
+        verbose_name_plural = 'Условия тура'
+
+
+class TourHotel(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    text = models.TextField(verbose_name='Текст')
+
+    class Meta:
+        verbose_name = 'Отель тура'
+        verbose_name_plural = 'Отели тура'
+
+
+class TourPriceInclude(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    text = models.TextField(verbose_name='Текст', null=True)
+
+    class Meta:
+        verbose_name = 'Цена включает'
+        verbose_name_plural = 'Цена включает'
+
+
+class TourPriceDoesNotInclude(models.Model):
+    tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    text = models.TextField(verbose_name='Текст')
+
+    class Meta:
+        verbose_name = 'Цена не включает'
+        verbose_name_plural = 'Цена не включает'
 
 
 class Article(models.Model):
@@ -106,4 +207,3 @@ class HotelItem(models.Model):
     class Meta:
         verbose_name = 'Отель'
         verbose_name_plural = 'Отели'
-

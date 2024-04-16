@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-14 00:01+0500\n"
+"POT-Creation-Date: 2024-04-17 04:44+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,6 +275,7 @@ msgid "Комментарий и пожелание"
 msgstr "Comment and wish"
 
 #: .\core\templates\core\booking.html:24 .\core\templates\core\index.html:162
+#: .\core\templates\core\tour_detail.html:30
 msgid "Отправить"
 msgstr "Send"
 
@@ -474,11 +475,13 @@ msgid "Популярные туры"
 msgstr "Popular tours"
 
 #: .\core\templates\core\index.html:39 .\core\templates\core\index.html:67
+#: .\core\templates\core\tour_detail.html:21
 #: .\core\templates\core\tours.html:29
 msgid "дней"
 msgstr "days"
 
 #: .\core\templates\core\index.html:39 .\core\templates\core\index.html:67
+#: .\core\templates\core\tour_detail.html:21
 #: .\core\templates\core\tours.html:30
 msgid "ночей"
 msgstr "nights"
@@ -1411,6 +1414,97 @@ msgstr ""
 #: .\core\templates\core\reviews.html:15 .\templates\base.html:38
 msgid "Отзывы"
 msgstr "Reviews"
+
+#: .\core\templates\core\tour_detail.html:18
+msgid "Места посещения"
+msgstr "Places to visit"
+
+#: .\core\templates\core\tour_detail.html:22
+msgid "Сезон"
+msgstr "Season"
+
+#: .\core\templates\core\tour_detail.html:23
+msgid "Звездность"
+msgstr "Stardom"
+
+#: .\core\templates\core\tour_detail.html:25
+msgid "ЗАБРОНИРОВАТЬ"
+msgstr "BOOK NOW"
+
+#: .\core\templates\core\tour_detail.html:26
+msgid "Цена от"
+msgstr "Price from"
+
+#: .\core\templates\core\tour_detail.html:27
+#, fuzzy
+#| msgid "Ваше имя"
+msgid "Ваше Имя"
+msgstr "Your name"
+
+#: .\core\templates\core\tour_detail.html:28
+#, fuzzy
+#| msgid "Ваш E-mail"
+msgid "Ваш email"
+msgstr "Your E-mail"
+
+#: .\core\templates\core\tour_detail.html:29
+#| msgid "Ваше сообщение"
+msgid "Ваше сообщение"
+msgstr "your message"
+
+#: .\core\templates\core\tour_detail.html:32
+msgid "Детали"
+msgstr "Details"
+
+#: .\core\templates\core\tour_detail.html:34
+msgid "Маршрут"
+msgstr "Route"
+
+#: .\core\templates\core\tour_detail.html:48
+msgid "День"
+msgstr "Day"
+
+#: .\core\templates\core\tour_detail.html:54
+msgid "Стоимость тура на весну 2024, с человека"
+msgstr "Tour cost for spring 2024, per person"
+
+#: .\core\templates\core\tour_detail.html:57
+#| msgid "чел"
+msgid "чел"
+msgstr "people"
+
+#: .\core\templates\core\tour_detail.html:61
+msgid "Дополнительные экскурсии"
+msgstr "Optional excursions"
+
+#: .\core\templates\core\tour_detail.html:69
+msgid ""
+"Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются "
+"гиду на\n"
+"                месте. Минимальная\n"
+"                группа для любой доп. экскурсии – 5 человек."
+msgstr ""
+"All additional excursions are discussed with the guide in advance and paid for"
+"guide to\n"
+"location. Minimum\n"
+"group for any additional excursion - 5 people."
+
+#: .\core\templates\core\tour_detail.html:73
+msgid "Цена включает"
+msgstr "Price includes"
+
+#: .\core\templates\core\tour_detail.html:80
+msgid "Цена не включает"
+msgstr "Price does not include"
+
+#: .\core\templates\core\tour_detail.html:89
+msgid "Условия"
+msgstr "Conditions"
+
+#: .\core\templates\core\tour_detail.html:96
+#| msgid "Гостиницы по маршруту"
+msgid "Гостиницы по маршруту"
+msgstr "Hotels along the route"
 
 #: .\core\templates\core\tours.html:17
 msgid "ТУРЫ В УЗБЕКИСТАН"

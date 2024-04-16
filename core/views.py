@@ -1,7 +1,7 @@
 import requests
 from django.conf import settings
-from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
+from django.shortcuts import render, redirect
 
 from . import models
 
@@ -125,7 +125,7 @@ def destinations_view(request, slug):
 
 
 def tours_view(request):
-    popular_tours = models.Tour.objects.all()
+    popular_tours = models.TourWithPrice.objects.all()
     paginator = Paginator(popular_tours, 8)
     page = request.GET.get('page')
     qs = paginator.get_page(page)
@@ -134,6 +134,16 @@ def tours_view(request):
         'tours': qs
     }
     return render(request, 'core/tours.html', context)
+
+
+def tour_with_price_detail(request, tour_id):
+    tour = models.TourWithPrice.objects.get(pk=tour_id)
+    places = ' — '.join([x.place for x in tour.placestourwithprice_set.all()])
+    context = {
+        'tour': tour,
+        'places': places
+    }
+    return render(request, 'core/tour_detail.html', context)
 
 
 def tour_detail(request, slug):
