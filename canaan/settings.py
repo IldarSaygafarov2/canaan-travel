@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-mq^eq1d&ou83a6@rk6_ay9j%kma=i!p3t#j-b!v(^c6c!ft_@r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['canaantravel.pythonanywhere.com', '127.0.0.1', '45.138.158.222']
+ALLOWED_HOSTS = ['canaantravel.pythonanywhere.com', '127.0.0.1', '45.138.158.222', 'centrum.travel']
 CSRF_TRUSTED_ORIGINS = [
-    'http://45.138.158.222'
+    'http://centrum.travel/'
 ]
 # Application definition
 
