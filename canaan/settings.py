@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-mq^eq1d&ou83a6@rk6_ay9j%kma=i!p3t#j-b!v(^c6c!ft_@r
 DEBUG = True
 
 ALLOWED_HOSTS = ['canaantravel.pythonanywhere.com', '127.0.0.1', '45.138.158.222']
-
+CSRF_TRUSTED_ORIGINS = [
+    'http://centrum.travel/'
+]
 # Application definition
 
 INSTALLED_APPS = [
