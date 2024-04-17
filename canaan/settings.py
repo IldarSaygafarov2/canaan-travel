@@ -26,7 +26,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['canaantravel.pythonanywhere.com', '127.0.0.1', '45.138.158.222', 'centrum.travel']
 CSRF_TRUSTED_ORIGINS = [
-    'http://centrum.travel/'
+    'http://centrum.travel'
 ]
 # Application definition
 
