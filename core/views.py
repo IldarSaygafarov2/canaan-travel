@@ -57,8 +57,8 @@ def home_view(request):
     advantages = models.Advantage.objects.all()
     destinations = models.Destination.objects.filter(is_popular=True)
 
-    popular_tours = models.Tour.objects.filter(is_popular=True)
-    recommended_tours = models.Tour.objects.filter(is_recommended=True)
+    popular_tours = models.TourWithPrice.objects.filter(is_popular=True)
+    recommended_tours = models.TourWithPrice.objects.filter(is_recommended=True)
 
     articles = models.Article.objects.all()
 

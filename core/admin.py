@@ -60,7 +60,7 @@ class TourAdmin(TranslationAdmin):
 
 
 class TourWithPriceAdmin(TranslationAdmin):
-    list_display = ('title', 'price', 'days', 'nights')
+    list_display = ('title', 'price', 'days', 'nights', 'is_popular', 'is_recommended')
     prepopulated_fields = {'slug': ('title',)}
     inlines = [
         PlacesTourWithPriceInline,
@@ -73,7 +73,7 @@ class TourWithPriceAdmin(TranslationAdmin):
         PriceByHumanTourInline,
 
     ]
-    # list_editable = ('is_popular', 'is_recommended')
+    list_editable = ('is_popular', 'is_recommended')
 
 
 class ArticleAdmin(TranslationAdmin):

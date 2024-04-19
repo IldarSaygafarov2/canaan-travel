@@ -84,6 +84,8 @@ class TourWithPrice(models.Model):
     season = models.CharField(verbose_name='Сезон', max_length=50, null=True, blank=True)
     stars = models.IntegerField(verbose_name='Звездность', default=0)
     route = models.URLField(verbose_name='Ссылка маршрута тура', blank=True, null=True)
+    is_popular = models.BooleanField(default=False, verbose_name='Сделать популярным ?')
+    is_recommended = models.BooleanField(default=False, verbose_name='Сделать рекомендуемым ?')
     slug = models.SlugField(blank=True)
 
     def __str__(self):
