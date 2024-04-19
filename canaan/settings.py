@@ -31,7 +31,7 @@ CSRF_TRUSTED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
-
+    'jazzmin',
     'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "ckeditor",
-    'jazzmin',
+
 
     'core.apps.CoreConfig',
 ]
