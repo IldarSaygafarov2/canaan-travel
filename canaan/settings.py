@@ -148,10 +148,10 @@ CHANNEL_API_LINK = (
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_USE_TLS = False
-# EMAIL_PORT = 465
-# EMAIL_USE_SSL = True
-# EMAIL_HOST_USER = 'sayildar17@gmail.com'
-# EMAIL_HOST_PASSWORD = 'sjln yejp zbph tanh'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = False
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'info@centrum.travel'
+EMAIL_HOST_PASSWORD = 'brme cpsd bvvb infn'

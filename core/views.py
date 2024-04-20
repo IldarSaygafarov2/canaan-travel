@@ -4,7 +4,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 from . import models
-
+from django.core import mail
 
 # Create your views here.
 
@@ -12,6 +12,14 @@ from . import models
 def send_mail(request):
     data = request.POST
     msg = f'Почта отправленная с сайта: {data["email"]}'
+    mail.send_mail(
+        subject='Оставленная почта',
+        message=f'Оставленная почта с сайта: {data["email"]}',
+        from_email=data["email"],
+        recipient_list=['info@centrum.travel'],
+        auth_user=settings.EMAIL_HOST_USER,
+        auth_password=settings.EMAIL_HOST_PASSWORD
+    )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
         channel_id=settings.CHANNEL_ID,
@@ -25,6 +33,14 @@ def send_username_and_phone(request):
     data = request.POST
 
     msg = f"Имя пользователя: {data['username']}\nНомер телефона: {data['phone']}"
+    mail.send_mail(
+        subject='Данные пользователя для бронирования тура',
+        message=f"Имя пользователя: {data['username']}\nНомер телефона: {data['phone']}",
+        from_email=settings.EMAIL_HOST_USER,
+        recipient_list=['info@centrum.travel'],
+        auth_user=settings.EMAIL_HOST_USER,
+        auth_password=settings.EMAIL_HOST_PASSWORD
+    )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
         channel_id=settings.CHANNEL_ID,
@@ -43,6 +59,14 @@ def book_tour(request):
 Номер телефона: {data['phone']}
 Комментарий: {data['body']}
 """
+    mail.send_mail(
+        subject='Бронирование тура',
+        message=msg,
+        from_email=settings.EMAIL_HOST_USER,
+        recipient_list=['info@centrum.travel'],
+        auth_user=settings.EMAIL_HOST_USER,
+        auth_password=settings.EMAIL_HOST_PASSWORD
+    )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
         channel_id=settings.CHANNEL_ID,
