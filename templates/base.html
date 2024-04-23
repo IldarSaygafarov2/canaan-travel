@@ -61,7 +61,7 @@
 </nav>
 {% block header %}
     <header class="header">
-        <div class="header__content">
+        <div class="header__content" style="background: url('{% static "images/hero.jpg" %}')">
             <h1 class="header__title">{% trans 'Туры в Узбекистан с Centrum-Holidays' %}</h1>
             <h2 class="header__subtitle">{% trans 'Откройте для себя сказочный Восток!' %}</h2>
             <form action="" class="header__form"><input type="text" placeholder="{% trans 'Куда держим курс?' %}">
@@ -137,7 +137,7 @@
             <p class="footer__content-item-descr">{% trans 'Независимые отзывы о нас читайте на' %} TripAdvisor</p><a
                 href="https://www.tripadvisor.ru/Attraction_Review-g293968-d15672817-Reviews-Canaan_Travel-Tashkent_Tashkent_Province.html"
                 target="blank"><img width="120px"
-                                    src="https://canaan.travel/wp-content/uploads/2021/05/tripadvisor-footer.png"
+                                    src="{% static 'images/tripadvisor-footer.png' %}"
                                     alt=""></a>
         </div>
     </div>

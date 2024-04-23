@@ -17,27 +17,49 @@ def get_tours(url):
     res = []
     for item in wrapper.find_all('div', class_='show-objects-item'):
         title = item.find('a', class_='show-objects-title').get_text(strip=True)
-        print(title)
         link = item.find('a', class_='show-objects-title')['href']
+        print(title)
         try:
             tour_soup = get_soup(link)
         except:
             tour_soup = get_soup(link)
         wrapper = tour_soup.find('div', class_='wprt-container')
+        txt = []
+        for i in wrapper:
+            if not i.name:
+                continue
+            if not i.find('iframe'):
+                txt.append(str(i))
+            else:
+                txt.append('')
 
+        if '' in txt:
+            descr_1 = ''.join(txt[:txt.index('')])
+            descr_2 = ''.join(txt[txt.index(''):])
+        else:
+            descr_1 = ''.join(txt[:len(txt)//2])
+            descr_2 = ''.join(txt[len(txt)//2:])
+
+        map_link = wrapper.find('iframe')
+        if map_link:
+            map_link = map_link.get('data-src')
+        else:
+            map_link = ''
         res.append({
             'title': title,
             'link': link,
-            'data': str(wrapper)
+            'full_description': descr_1,
+            'full_description2': descr_2,
+            'map_link': map_link
         })
         time.sleep(5)
     return res
 
 
-# tashkent_tours = get_tours('https://canaan.travel/uzbekistan/samarkand')
-#
-# with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
-#     json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
+tashkent_tours = get_tours('https://canaan.travel/ru/uzbekistan/tashkent')
+
+with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
+    json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
 
 
 def get_hotels_last_page(url):
@@ -101,6 +123,6 @@ def get_tours_with_price(url):
     return res
 
 
-tours = get_tours_with_price('https://saftravel.uz/ru/uzbekistan/tours')
-with open('../temp-data/tours-with-price.json', mode='w', encoding='utf-8') as file:
-    json.dump(tours, file, indent=4, ensure_ascii=False)
+# tours = get_tours_with_price('https://saftravel.uz/ru/uzbekistan/tours')
+# with open('../temp-data/tours-with-price.json', mode='w', encoding='utf-8') as file:
+#     json.dump(tours, file, indent=4, ensure_ascii=False)

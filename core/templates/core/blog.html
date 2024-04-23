@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block title %}
-
+    {% trans 'БЛОГ' %}
 {% endblock %}
 
 
@@ -14,7 +14,7 @@
     <main>
         <section class="blog">
             <section class="blog__content">
-                <img src="https://canaan.travel/wp-content/uploads/2020/09/zaglushka.jpg" alt="zaglushka">
+                <img src="{% static 'images/zaglushka.jpg' %}" alt="zaglushka">
                 <h1 class="blog__title">{% trans 'БЛОГ' %}</h1>
             </section>
             <section class="blog__items container">

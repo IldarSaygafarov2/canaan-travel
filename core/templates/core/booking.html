@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block title %}
     Centrum-holidays
@@ -9,7 +9,7 @@
 
 {% block content %}
     <main class="booking__main">
-        <section class="booking__main-intro">
+        <section class="booking__main-intro" style="background-image: url('{% static "images/zaglushka.jpg" %}')">
             <h1 class="booking__main-title">{% trans 'Бронирование'|upper %}</h1>
         </section>
         <section class="booking__main-application">

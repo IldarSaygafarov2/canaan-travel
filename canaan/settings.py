@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "ckeditor",
+    'ckeditor_uploader',
     "core.apps.CoreConfig",
 ]
 
@@ -145,7 +146,7 @@ CHANNEL_API_LINK = (
 )
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
-
+CKEDITOR_STORAGE_BACKEND = 'django.core.files.storage.FileSystemStorage'
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = False

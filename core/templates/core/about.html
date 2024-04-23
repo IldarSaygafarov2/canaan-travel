@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
-{% load i18n %}
+{% load i18n static %}
+
 {% block title %}
     Centrum-holidays
 {% endblock %}
 
 {% block header %}
-    <header class="about__header">
+    <header class="about__header" style="background-image: url('{% static "images/2-MT3gnj4GU.jpg" %}') ">
         <h1 class="about__header-title">{% trans 'О нас' %}</h1>
     </header>
 {% endblock %}

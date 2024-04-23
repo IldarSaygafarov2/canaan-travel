@@ -56,6 +56,7 @@ class TourAdmin(TranslationAdmin):
     list_display = ('title', 'preview', 'is_popular', 'is_recommended', 'destination')
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('destination',)
+    search_fields = ['title']
     list_editable = ('is_popular', 'is_recommended')
 
 

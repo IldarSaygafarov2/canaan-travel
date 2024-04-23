@@ -1,8 +1,6 @@
-from ckeditor.fields import RichTextField
 from django.db import models
+from ckeditor_uploader.fields import RichTextUploadingField
 
-
-# Create your models here.
 
 class Review(models.Model):
     author = models.CharField(max_length=20, verbose_name='Имя автора')
@@ -60,7 +58,9 @@ class Tour(models.Model):
     title = models.CharField(verbose_name='Заголовок', max_length=100)
     preview = models.ImageField(verbose_name='Заставка', upload_to='tours/', null=True, blank=True)
     short_description = models.TextField(max_length=500, verbose_name='Краткое описание', null=True, blank=True)
-    full_description = RichTextField(verbose_name='Полное описание 1', blank=True, null=True)
+    full_description = RichTextUploadingField(verbose_name='Полное описание 1', blank=True, null=True)
+    map_link = models.CharField(max_length=1000, verbose_name='Ссылка на карту', blank=True, null=True)
+    full_description2 = RichTextUploadingField(verbose_name='Полное описание 2', blank=True, null=True)
     is_popular = models.BooleanField(verbose_name='Популярный тур?', default=False)
     is_recommended = models.BooleanField(verbose_name='Рекомендуемый тур?', default=False)
     destination = models.ForeignKey(Destination, on_delete=models.CASCADE, verbose_name='Направление', null=True)
@@ -77,7 +77,7 @@ class Tour(models.Model):
 class TourWithPrice(models.Model):
     title = models.CharField(verbose_name='Заголовок', max_length=100)
     preview = models.ImageField(verbose_name='Заставка', upload_to='tours/', null=True, blank=True)
-    full_description = RichTextField(verbose_name='Детали', null=True, blank=True)
+    full_description = RichTextUploadingField(verbose_name='Детали', null=True, blank=True)
     price = models.CharField(verbose_name='Стоимость', null=True, blank=True, max_length=10)
     days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
     nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)

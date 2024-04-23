@@ -15,7 +15,7 @@ class HotelTranslationOptions(TranslationOptions):
 
 @register(models.Tour)
 class TourTranslationOptions(TranslationOptions):
-    fields = ('title', 'short_description', 'full_description')
+    fields = ('title', 'short_description', 'full_description', 'full_description2')
 
 
 @register(models.TourWithPrice)

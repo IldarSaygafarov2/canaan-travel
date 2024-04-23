@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block title %}
     Centrum-holidays
@@ -45,7 +45,7 @@
             </div>
         </section>
         <section class="special">
-            <img src="https://canaan.travel/wp-content/uploads/2020/09/samarkand-registan.jpg"
+            <img src="{% static 'images/samarkand-registan.jpg' %}"
                  alt="registan">
             <div class="special__content">
                 <h4 class="special__title">{% trans 'Специальное предложение' %}</h4>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="more__info">
+        <section class="more__info" style="background-image: url('{% static "images/khiva-panorama.jpg" %}')">
             <h2 class="more__info-title">{% trans 'Узнайте о Востоке больше' %}</h2>
         </section>
         <section class="traveler__reviews">
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="travel__info">
+        <section class="travel__info" style="background-image: url('{% static "images/img_canaan.jpg" %}')">
             <h2 class="travel__info-title">{% trans 'Узнайте о Востоке больше вместе с нами' %}</h2>
             <p class="travel__info-descr">
                 {% blocktrans %}Centrum-Holidays — туристическая компания полного цикла, ставящая перед собой
