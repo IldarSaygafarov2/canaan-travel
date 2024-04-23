@@ -119,10 +119,19 @@
 .wprt-container iframe {
     width: 100%;
 }
-/*.toursDetailPage__main-content ul li p {*/
-/*    margin-top: 0;*/
-/*}*/
+
 .toursDetailPage__main-content ul li {
     display: flex;
     align-items: start;
+}
+
+
+.header__content,
+.more__info,
+.travel__info,
+.about__header,
+.hotels__main-header,
+.mission__header,
+.booking__main-intro {
+    background-image: none;
 }
