@@ -21,5 +21,6 @@ urlpatterns = [
 
     path('send_mail/', views.send_mail, name='send_mail'),
     path('send_username_and_phone/', views.send_username_and_phone, name='send_username_and_phone'),
-    path('book_tour/', views.book_tour, name='book_tour')
+    path('book_tour/', views.book_tour, name='book_tour'),
+    path('book_tour_with_price/', views.book_tour_with_price, name='book_tour_with_price'),
 ]

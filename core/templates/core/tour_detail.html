@@ -22,11 +22,13 @@
                 <div class="toursDetailPage__main-content-items-card">{% trans 'Сезон' %}: {{ tour.season }}</div>
                 <div class="toursDetailPage__main-content-items-card">{% trans 'Звездность' %}: {{ tour.stars }}</div>
             </div>
-            <form action="" class="toursDetailPage__main-content-form"><h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
-                <p>{% trans 'Цена от' %} <span>${{ tour.price }}</span></p>
-                <input type="text" name="" id="" placeholder="{% trans 'Ваше Имя' %}*" required>
-                <input type="text" name="" id="" placeholder="{% trans 'Ваш email' %}*" required>
-                <textarea name="" id="" cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
+            <form action="{% url 'book_tour_with_price' %}" class="toursDetailPage__main-content-form" method="post">
+                {% csrf_token %}
+                <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
+                <p>{% trans 'Цена от' %} <span>{{ tour.price }}</span></p>
+                <input type="text" name="username" id="" placeholder="{% trans 'Ваше Имя' %}*" required>
+                <input type="text" name="email" id="" placeholder="{% trans 'Ваш email' %}*" required>
+                <textarea name="text" id="" cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
                 <button>{% trans 'Отправить' %}</button>
             </form>
             <h2>{% trans 'Детали' %}</h2>
@@ -73,14 +75,14 @@
                 <div class="toursDetailPage__main-content-priceInfo-left"><h2>{% trans 'Цена включает' %}:</h2>
                     <ul>
                         {% for item in tour.tourpriceinclude_set.all %}
-                        <li>✅ {{ item.text|safe }}</li>
+                            <li>✅ {{ item.text|safe }}</li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="toursDetailPage__main-content-priceInfo-right"><h2>{% trans 'Цена не включает' %}:</h2>
                     <ul>
                         {% for item in tour.tourpricedoesnotinclude_set.all %}
-                        <li>❌ {{ item.text }}</li>
+                            <li>❌ {{ item.text }}</li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -89,14 +91,14 @@
                 <div class="toursDetailPage__main-content-priceInfo-left"><h2>{% trans 'Условия' %}:</h2>
                     <ul>
                         {% for item in tour.tourcondition_set.all %}
-                        <li>{{ item.text }}</li>
+                            <li>{{ item.text }}</li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="toursDetailPage__main-content-priceInfo-right"><h2>{% trans 'Гостиницы по маршруту' %}:</h2>
                     <ul>
                         {% for item in tour.tourhotel_set.all %}
-                        <li>{{ item.text }}</li>
+                            <li>{{ item.text }}</li>
                         {% endfor %}
                     </ul>
                 </div>
