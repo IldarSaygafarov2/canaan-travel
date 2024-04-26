@@ -135,3 +135,8 @@
 .booking__main-intro {
     background-image: none;
 }
+
+.tour__detail-main-content img {
+    width: 100% !important;
+    height: 440px !important;
+}
