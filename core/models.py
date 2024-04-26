@@ -78,7 +78,7 @@ class TourWithPrice(models.Model):
     title = models.CharField(verbose_name='Заголовок', max_length=100)
     preview = models.ImageField(verbose_name='Заставка', upload_to='tours/', null=True, blank=True)
     full_description = RichTextUploadingField(verbose_name='Детали', null=True, blank=True)
-    price = models.CharField(verbose_name='Стоимость', null=True, blank=True, max_length=10)
+    price = models.CharField(verbose_name='Стоимость', null=True, blank=True, max_length=20)
     days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
     nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
     season = models.CharField(verbose_name='Сезон', max_length=50, null=True, blank=True)

@@ -56,7 +56,7 @@ def get_tours(url):
     return res
 
 
-tashkent_tours = get_tours('https://canaan.travel/ru/uzbekistan/tashkent')
+tashkent_tours = get_tours('https://canaan.travel/ru/uzbekistan/bukhara')
 
 with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
     json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
