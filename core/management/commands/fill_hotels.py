@@ -20,7 +20,6 @@ class Command(BaseCommand):
             print(f'hotels-{i}.json')
             content = json.load(file)
             for line in content:
-                # print(line)
                 price = int(''.join(list(filter(lambda x: x.isdigit(), line['price']))))
                 with open(os.path.join(
                         settings.BASE_DIR, 'media', 'hotels', os.path.basename(line["img"])), 'wb') as file:
@@ -36,6 +35,7 @@ class Command(BaseCommand):
                     slug=slugify(line['title'])
                 )
                 obj.save()
+
                 print(obj, 'created')
 
         # hotels = get_hotels('https://canaan.travel/ru/uzbekistan/hotels')
@@ -51,3 +51,4 @@ class Command(BaseCommand):
         #     )
         #     obj.save()
         #     print(obj, 'created')
+

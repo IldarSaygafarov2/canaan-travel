@@ -20,6 +20,9 @@
           rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    {% block extra_css %}
+
+    {% endblock extra_css %}
 </head>
 {% get_current_language as LANGUAGE_CODE %}
 {% get_available_languages as languages %}
@@ -64,7 +67,8 @@
         <div class="header__content" style="background: url('{% static "images/hero.jpg" %}')">
             <h1 class="header__title">{% trans 'Туры в Узбекистан с Centrum-Holidays' %}</h1>
             <h2 class="header__subtitle">{% trans 'Откройте для себя сказочный Восток!' %}</h2>
-            <form action="" class="header__form"><input type="text" placeholder="{% trans 'Куда держим курс?' %}">
+            <form action="{% url 'search' %}" class="header__form">
+                <input type="text" name="q" placeholder="{% trans 'Куда держим курс?' %}">
                 <button>{% trans 'Поиск' %}</button>
             </form>
             <div class="header__info">
@@ -83,8 +87,8 @@
 {% endblock %}
 
 {% block content %}
-
 {% endblock %}
+
 <footer class="footer">
     <div class="container footer__content">
         <div class="footer__content-item">
@@ -218,6 +222,9 @@
 <script src="{% static 'js/lazy.js' %}"></script>
 <script src="{% static 'js/main.min.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
+
+{% block extra_script %}
+{% endblock extra_script %}
 </body>
 
 </html>

@@ -106,7 +106,9 @@ def home_view(request):
     recommended_tours = models.TourWithPrice.objects.filter(is_recommended=True)
 
     articles = models.Article.objects.all()
+    
 
+    
     context = {
         'reviews': reviews,
         'clients': clients,
@@ -208,3 +210,26 @@ def hotels_view(request):
         'tours': qs
     }
     return render(request, 'core/hotels.html', context)
+
+
+def hotel_detail(request, hotel_slug):
+    hotel = models.HotelItem.objects.get(slug=hotel_slug)
+    hotels = models.HotelItem.objects.all()
+    context = {
+        'hotel': hotel,
+
+        'hotels': hotels[:8]
+    }
+    return render(request, 'core/hotel_detail.html', context)
+
+
+def search(request):
+    query = request.GET.get('q')
+    
+    tours = models.TourWithPrice.objects.filter(title__iregex=query)
+    tours2 = models.Tour.objects.filter(title__iregex=query)
+    context = {
+        'tours_with_price': tours,
+        'tours': tours2
+    }
+    return render(request, 'core/search_page.html', context)

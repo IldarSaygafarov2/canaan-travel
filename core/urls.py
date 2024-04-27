@@ -15,6 +15,7 @@ urlpatterns = [
     path('blog/', views.blog_view, name='blog'),
     path('destinations/<slug:slug>/', views.destinations_view, name='destinations'),
     path('hotels/', views.hotels_view, name='hotels'),
+    path('hotels/<slug:hotel_slug>', views.hotel_detail, name='hotel_detail'),
 
 
 
@@ -23,4 +24,5 @@ urlpatterns = [
     path('send_username_and_phone/', views.send_username_and_phone, name='send_username_and_phone'),
     path('book_tour/', views.book_tour, name='book_tour'),
     path('book_tour_with_price/', views.book_tour_with_price, name='book_tour_with_price'),
+    path('search/', views.search, name='search')
 ]

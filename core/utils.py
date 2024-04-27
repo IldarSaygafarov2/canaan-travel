@@ -56,10 +56,10 @@ def get_tours(url):
     return res
 
 
-tashkent_tours = get_tours('https://canaan.travel/ru/uzbekistan/bukhara')
+# tashkent_tours = get_tours('https://canaan.travel/ru/uzbekistan/bukhara')
 
-with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
-    json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
+# with open('../temp-data/khiva.json', mode='w', encoding='utf-8') as file:
+#     json.dump(tashkent_tours, file, indent=4, ensure_ascii=False)
 
 
 def get_hotels_last_page(url):
@@ -82,21 +82,36 @@ def get_hotels(url, page_num=1):
     wrap = soup.find('div', class_='show-hotels-container')
     for hotel in wrap.find_all('div', class_='show-hotels-item'):
         title = hotel.find('a', class_='show-hotels-title').get_text(strip=True)
+        href = hotel.find('a', class_='show-hotels-title')['href']
+        print(title)
+        try:
+            inner = get_soup(href)
+        except:
+            inner = get_soup(href)
+        
+        buns = [bun.get_text(strip=True) for bun in inner.find('ul', class_='wb-list-amenities').find_all('li')]
+        description = inner.find('div', class_='wprt-container')
+        inner_images = inner.find('div', class_='service-gallery-single').find_all('img')
+        inner_images = [i['src'] for i in inner_images]
+        
         price = hotel.find('div', class_='show-hotels-cost').get_text(strip=True).split('/')[0]
         img = hotel.find('img')['data-src']
-
+    
         res.append({
             'title': title,
             'price': price,
+            'buns': buns,
+            'description': str(description),
+            'inner_images': inner_images,
             'img': img
         })
-        print(title)
     return res
 
 
-# hotels = get_hotels('https://canaan.travel/ru/uzbekistan/hotels/page/21')
-# with open('../temp-data/hotels-21.json', mode='w', encoding='utf-8') as file:
-#     json.dump(hotels, file, indent=4, ensure_ascii=False)
+hotels = get_hotels('https://canaan.travel/ru/uzbekistan/hotels/page/3')
+with open('../temp-data/hotels-3.json', mode='w', encoding='utf-8') as file:
+    json.dump(hotels, file, indent=4, ensure_ascii=False)
+
 
 # https://saftravel.uz/ru/uzbekistan/tours
 def get_tours_with_price(url):

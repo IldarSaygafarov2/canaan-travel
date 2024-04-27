@@ -1,5 +1,5 @@
 from django.contrib import admin
-from modeltranslation.admin import TranslationAdmin
+from modeltranslation.admin import TranslationAdmin, TranslationTabularInline
 
 from . import models
 
@@ -89,8 +89,22 @@ class AdvantageAdmin(TranslationAdmin):
     pass
 
 
+class HotelBunInline(TranslationTabularInline):
+    model = models.Bun
+    extra = 1
+
+
+class HotelImageGalleryInline(admin.TabularInline):
+    model = models.HotelGallery
+    extra = 1
+
+
 class HotelAdmin(TranslationAdmin):
     prepopulated_fields = {'slug': ('name',)}
+    inlines = [
+        HotelBunInline,
+        HotelImageGalleryInline
+    ]
 
 
 admin.site.register(models.Review, ReviewAdmin)

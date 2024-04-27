@@ -200,6 +200,7 @@ class Article(models.Model):
 class HotelItem(models.Model):
     name = models.CharField(verbose_name='Название', max_length=100)
     price = models.IntegerField(verbose_name='Цена')
+    description = models.TextField(verbose_name='Описание', null=True, blank=True)
     slug = models.SlugField(verbose_name='Слаг')
     preview = models.ImageField(verbose_name='Фото', upload_to='hotels/')
 
@@ -209,3 +210,25 @@ class HotelItem(models.Model):
     class Meta:
         verbose_name = 'Отель'
         verbose_name_plural = 'Отели'
+
+
+class Bun(models.Model):
+    title = models.CharField(max_length=50, verbose_name='Название')
+    hotel = models.ForeignKey(HotelItem, on_delete=models.CASCADE, verbose_name='ОТЕЛЬ')
+    
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Услуга отеля'
+        verbose_name_plural = 'Услуги отеля'
+
+
+class HotelGallery(models.Model):
+    image = models.ImageField(verbose_name='Фото', upload_to='hotels/')
+    hotel = models.ForeignKey(HotelItem, on_delete=models.CASCADE, verbose_name='ОТЕЛЬ')
+    
+    class Meta:
+        verbose_name = 'Фото отеля'
+        verbose_name_plural = 'Фото отеля'
+        

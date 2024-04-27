@@ -14,8 +14,7 @@
                 <div class="popular__destinations-cards">
                     {% for destination in destinations %}
                         <a href="{% url 'destinations' destination.slug %}"  class="popular__destinations-cards-item">
-                            <img src="{{ destination.preview.url }}"
-                                 alt="card-item">
+                            <img src="{{ destination.preview.url }}" alt="card-item">
                             <div class="popular__destinations-cards-item-content">
                                 <h4 class="popular__destinations-cards-item-title">{{ destination.title }}</h4>
                                 <p class="popular__destinations-cards-item-descr">{{ destination.short_description }}</p>

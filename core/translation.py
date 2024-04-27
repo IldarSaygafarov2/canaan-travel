@@ -1,5 +1,6 @@
 from modeltranslation.translator import register, TranslationOptions
 
+
 from . import models
 
 
@@ -10,8 +11,12 @@ class ReviewTranslationOptions(TranslationOptions):
 
 @register(models.HotelItem)
 class HotelTranslationOptions(TranslationOptions):
-    fields = ('name',)
+    fields = ('name', 'description')
 
+
+@register(models.Bun)
+class BunTranslationOptions(TranslationOptions):
+    fields = ('title',)
 
 @register(models.Tour)
 class TourTranslationOptions(TranslationOptions):

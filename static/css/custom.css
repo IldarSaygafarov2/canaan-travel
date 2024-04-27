@@ -140,3 +140,12 @@
     width: 100% !important;
     height: 440px !important;
 }
+
+.header__form button {
+    padding: 16px 48px;
+    border-radius: 12px;
+    transition: .5s;
+    background: #ff00e7;
+    color: #fff;
+    font-size: 20px;
+}
