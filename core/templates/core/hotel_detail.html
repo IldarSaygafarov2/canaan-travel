@@ -38,12 +38,11 @@
                          data-projectcap="One Residence" data-pricecap="RM 588,000,00"
                          data-location="Puchong, Selangor">
                     {% endfor %}
-
                 </div>
             </div>
         </div><!--  -->
         {{ hotel.description|safe }}
-        <form action="" class="toursDetailPage__main-content-form" style="width: 100%; max-width: 100%;" method="post">
+        <form action="{% url 'book_hotel' %}" class="toursDetailPage__main-content-form" style="width: 100%; max-width: 100%;" method="post">
             {% csrf_token %}
             <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
             <p style="text-align: center;">{% trans 'Цена от' %}
@@ -51,7 +50,7 @@
             </p>
             <input type="text" name="username"  placeholder="{% trans 'Ваше Имя' %}*" required>
             <input type="text" name="email"  placeholder="{% trans 'Ваш email' %}*" required>
-            <textarea name="message"  cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
+            <textarea name="text"  cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
             <button>{% trans 'Отправить' %}</button>
         </form>
         <h2>{% trans 'Рекомендации' %}</h2>
