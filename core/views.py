@@ -30,6 +30,26 @@ def book_tour_with_price(request):
     return redirect('home')
 
 
+def book_hotel(request):
+    data = request.POST
+    msg = f"""
+Имя пользователя: {data['username']}
+Почта: {data['email']}
+Сообщение: {data['text']}
+"""
+    mail.send_mail(
+        subject='Бронирование отеля',
+        message=msg,
+        from_email=data["email"],
+        recipient_list=['info@centrum.travel'],
+    )
+    requests.post(settings.CHANNEL_API_LINK.format(
+        token=settings.BOT_TOKEN,
+        channel_id=settings.CHANNEL_ID,
+        text=msg
+    ))
+    return redirect('home')
+
 def send_mail(request):
     data = request.POST
     msg = f'Почта отправленная с сайта: {data["email"]}'
