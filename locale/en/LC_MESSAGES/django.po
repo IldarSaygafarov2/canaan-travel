@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-24 02:50+0500\n"
+"POT-Creation-Date: 2024-04-29 20:49+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\core\templates\core\about.html:10 .\templates\base.html:35
+#: .\core\templates\core\about.html:10 .\templates\base.html:38
 msgid "О нас"
 msgstr "About us"
 
@@ -150,23 +150,6 @@ msgstr ""
 " "
 
 #: .\core\templates\core\about.html:63
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        <li>Бронирование и оформление авиа- и ж/д билетов "
-#| "по любым направлениям;</li>\n"
-#| "                        <li>Аренда автотранспорта любого класса по "
-#| "маршруту тура в стране;</li>\n"
-#| "                        <li>Визовая поддержка;</li>\n"
-#| "                        <li>Встреча в VIP/CIP залах аэропортов;</li>\n"
-#| "                        <li>Экскурсионное обслуживание и услуги гидов-"
-#| "переводчиков;</li>\n"
-#| "                        <li>Бронирование и размещение в гостиницах "
-#| "различного класса;</li>\n"
-#| "                        <li>Организация досуга, культурно-развлекательных "
-#| "мероприятий;</li>\n"
-#| "                        <li>Организация шоппинга и гастрономических "
-#| "экскурсий.</li>"
 msgid ""
 "<li>Бронирование и оформление авиа- и ж/д билетов по любым направлениям;</"
 "li>\n"
@@ -206,20 +189,6 @@ msgstr ""
 "individual and group tours"
 
 #: .\core\templates\core\about.html:78
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        <li>Разработка концепции мероприятия;</li>\n"
-#| "                        <li>Подбор конференц-площадки мероприятия;</li>\n"
-#| "                        <li>Калькуляция бюджета, составление сметы;</li>\n"
-#| "                        <li>Оформление интерьеров;</li>\n"
-#| "                        <li>Организация выступления артистов, "
-#| "профессиональных ведущих и звёзд;</li>\n"
-#| "                        <li>Обеспечение техническим оборудованием;</li>\n"
-#| "                        <li>Заказ сувенирной и рекламной продукции;</li>\n"
-#| "                        <li>Проведение тимбилдингов.</li>\n"
-#| "                        <li>Организация шоппинга и гастрономических "
-#| "экскурсий.</li>"
 msgid ""
 "<li>Разработка концепции мероприятия;</li>\n"
 "                        <li>Подбор конференц-площадки мероприятия;</li>\n"
@@ -250,15 +219,6 @@ msgid "Наши преимущества"
 msgstr "Our advantages"
 
 #: .\core\templates\core\about.html:92
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        <li>Многолетний опыт работы;</li>\n"
-#| "                        <li>Масштабность деятельности;</li>\n"
-#| "                        <li>Собственная авиакасса;</li>\n"
-#| "                        <li>Уникальные маршруты по Великому Шёлковому "
-#| "Пути;</li>\n"
-#| "                        <li>Грузовые авиаперевозки</li>"
 msgid ""
 "<li>Многолетний опыт работы;</li>\n"
 "                        <li>Масштабность деятельности;</li>\n"
@@ -286,7 +246,7 @@ msgstr "Book a tour"
 msgid "БЛОГ"
 msgstr "BLOG"
 
-#: .\core\templates\core\booking.html:13 .\templates\base.html:41
+#: .\core\templates\core\booking.html:13 .\templates\base.html:44
 msgid "Бронирование"
 msgstr "Booking"
 
@@ -295,7 +255,7 @@ msgid "Заполните поля для резерва тура"
 msgstr "Fill in the fields to reserve a tour"
 
 #: .\core\templates\core\booking.html:19 .\core\templates\core\booking.html:20
-#: .\core\templates\core\index.html:160
+#: .\core\templates\core\index.html:159
 msgid "Ваше имя"
 msgstr "Your name"
 
@@ -303,7 +263,7 @@ msgstr "Your name"
 msgid "Ваш E-mail"
 msgstr "Your E-mail"
 
-#: .\core\templates\core\booking.html:22 .\core\templates\core\index.html:161
+#: .\core\templates\core\booking.html:22 .\core\templates\core\index.html:160
 msgid "Ваш номер телефона"
 msgstr "Your phone number"
 
@@ -311,22 +271,57 @@ msgstr "Your phone number"
 msgid "Комментарий и пожелание"
 msgstr "Comment and wish"
 
-#: .\core\templates\core\booking.html:24 .\core\templates\core\index.html:162
+#: .\core\templates\core\booking.html:24
+#: .\core\templates\core\hotel_detail.html:54
+#: .\core\templates\core\index.html:161
 #: .\core\templates\core\tour_detail.html:32
 msgid "Отправить"
 msgstr "Send"
 
-#: .\core\templates\core\hotels.html:5 .\core\templates\core\hotels.html:15
-msgid "ОТЕЛИ УЗБЕКИСТАНА"
-msgstr "HOTELS IN UZBEKISTAN"
+#: .\core\templates\core\hotel_detail.html:47
+#: .\core\templates\core\tour_detail.html:27
+msgid "ЗАБРОНИРОВАТЬ"
+msgstr "BOOK NOW"
 
+#: .\core\templates\core\hotel_detail.html:48
+#: .\core\templates\core\tour_detail.html:28
+msgid "Цена от"
+msgstr "Price from"
+
+#: .\core\templates\core\hotel_detail.html:51
+#: .\core\templates\core\tour_detail.html:29
+msgid "Ваше Имя"
+msgstr "Your name"
+
+#: .\core\templates\core\hotel_detail.html:52
+#: .\core\templates\core\tour_detail.html:30
+msgid "Ваш email"
+msgstr "Your E-mail"
+
+#: .\core\templates\core\hotel_detail.html:53
+#: .\core\templates\core\tour_detail.html:31
+msgid "Ваше сообщение"
+msgstr "your message"
+
+#: .\core\templates\core\hotel_detail.html:56
+#, fuzzy
+#| msgid "Мы рекомендуем"
+msgid "Рекомендации"
+msgstr "We recommend"
+
+#: .\core\templates\core\hotel_detail.html:64
 #: .\core\templates\core\hotels.html:23
 msgid "ночь"
 msgstr "night"
 
+#: .\core\templates\core\hotel_detail.html:65
 #: .\core\templates\core\hotels.html:23
 msgid "Забронировать"
 msgstr "Book"
+
+#: .\core\templates\core\hotels.html:5 .\core\templates\core\hotels.html:15
+msgid "ОТЕЛИ УЗБЕКИСТАНА"
+msgstr "HOTELS IN UZBEKISTAN"
 
 #: .\core\templates\core\hotels.html:29
 msgid ""
@@ -461,7 +456,6 @@ msgid "Узнать подробнее"
 msgstr "Find out more"
 
 #: .\core\templates\core\hotels.html:69
-
 msgid ""
 "В каждом городе — от Ташкента до Нураты — дюжины вариантов на любой вкус и "
 "кошелек, мы же\n"
@@ -508,47 +502,49 @@ msgstr ""
 msgid "Популярные направления"
 msgstr "Popular destinations"
 
-#: .\core\templates\core\index.html:30
+#: .\core\templates\core\index.html:29
 msgid "Популярные туры"
 msgstr "Popular tours"
 
-#: .\core\templates\core\index.html:39 .\core\templates\core\index.html:67
+#: .\core\templates\core\index.html:38 .\core\templates\core\index.html:66
+#: .\core\templates\core\search_page.html:51
 #: .\core\templates\core\tour_detail.html:21
 #: .\core\templates\core\tours.html:30
 msgid "дней"
 msgstr "days"
 
-#: .\core\templates\core\index.html:39 .\core\templates\core\index.html:67
+#: .\core\templates\core\index.html:38 .\core\templates\core\index.html:66
+#: .\core\templates\core\search_page.html:51
 #: .\core\templates\core\tour_detail.html:21
 #: .\core\templates\core\tours.html:31
 msgid "ночей"
 msgstr "nights"
 
-#: .\core\templates\core\index.html:51
+#: .\core\templates\core\index.html:50
 msgid "Специальное предложение"
 msgstr "Special offer"
 
-#: .\core\templates\core\index.html:52
+#: .\core\templates\core\index.html:51
 msgid "Путешествуйте дешевле!"
 msgstr "Travel cheaper!"
 
-#: .\core\templates\core\index.html:53
+#: .\core\templates\core\index.html:52
 msgid "УЗНАТЬ БОЛЬШЕ"
 msgstr "TO LEARN MORE"
 
-#: .\core\templates\core\index.html:58
+#: .\core\templates\core\index.html:57
 msgid "Мы рекомендуем"
 msgstr "We recommend"
 
-#: .\core\templates\core\index.html:77
+#: .\core\templates\core\index.html:76
 msgid "Узнайте о Востоке больше"
 msgstr "Find out more about the East"
 
-#: .\core\templates\core\index.html:98
+#: .\core\templates\core\index.html:97
 msgid "Узнайте о Востоке больше вместе с нами"
 msgstr "Find out more about the East with us"
 
-#: .\core\templates\core\index.html:100
+#: .\core\templates\core\index.html:99
 msgid ""
 "Centrum-Holidays — туристическая компания полного цикла, ставящая перед "
 "собой\n"
@@ -571,7 +567,7 @@ msgstr ""
 "peace to the people of Central Asia.\n"
 " "
 
-#: .\core\templates\core\index.html:108
+#: .\core\templates\core\index.html:107
 msgid ""
 "Мы работаем как с отдельными туристами, так и с компаниями. Наличие\n"
 "                    собственных авиакассы, автотранспорта и сотрудничество с "
@@ -585,35 +581,35 @@ msgstr ""
 "to create unique offers in an individual wayOkay.\n"
 " "
 
-#: .\core\templates\core\index.html:114
+#: .\core\templates\core\index.html:113
 msgid "Преимущество нашего обслуживания"
 msgstr "The advantage of our service"
 
-#: .\core\templates\core\index.html:132
+#: .\core\templates\core\index.html:131
 msgid "Подпишитесь на рассылку интересных предложений"
 msgstr "Subscribe to the newsletter for interesting offers"
 
-#: .\core\templates\core\index.html:135
+#: .\core\templates\core\index.html:134
 msgid "Ваш адрес E-mail"
 msgstr "Yoru E-mail"
 
-#: .\core\templates\core\index.html:136
+#: .\core\templates\core\index.html:135
 msgid "Подписаться"
 msgstr "Subscribe"
 
-#: .\core\templates\core\index.html:141 .\templates\base.html:128
+#: .\core\templates\core\index.html:140 .\templates\base.html:132
 msgid "Блог"
 msgstr "Blog"
 
-#: .\core\templates\core\index.html:156
+#: .\core\templates\core\index.html:155
 msgid "Хотите забронировать тур?"
 msgstr "Want to book a tour?"
 
-#: .\core\templates\core\index.html:157
+#: .\core\templates\core\index.html:156
 msgid "Заполните небольшую форму, и мы подберем тур именно для вас"
 msgstr "Fill out a short form and we will select a tour just for you"
 
-#: .\core\templates\core\index.html:167
+#: .\core\templates\core\index.html:166
 msgid "Наши партнеры"
 msgstr "Our partners"
 
@@ -641,7 +637,6 @@ msgid "Существует несколько режимов въезда в Р
 msgstr "There are several modes of entry into the Republic of Uzbekistan:"
 
 #: .\core\templates\core\info.html:25
-
 msgid ""
 "<li>безвизовый режим</li>\n"
 "                <li>упрощенный режим</li>\n"
@@ -665,7 +660,6 @@ msgid "Безвизовый режим"
 msgstr "Visa-free regime"
 
 #: .\core\templates\core\info.html:35
-
 msgid ""
 "Для въезда в Узбекистан резидентам нижеприведенных стран получение визы не "
 "требуется. Въезд\n"
@@ -696,7 +690,7 @@ msgstr ""
 " <h3>Entry for 60 days</h3>\n"
 " <p>Kyrgyzstan</p>\n"
 " <h3>Entry for 30 days</h3>\n"
-" <p>Australia<br>Iceland<br>Russia<br>San Marino<br>Australia</p>\n"
+" <p>Australia<br>Iceland<br>Russia<br>San Marino<br>Australia</p>"
 
 #: .\core\templates\core\info.html:47
 msgid ""
@@ -715,7 +709,7 @@ msgstr ""
 "Uzbekistan exceeds the deadlines, they must receiveentry visa in accordance "
 "with the established\n"
 "MFA\n"
-"Okay.\n"
+"Okay."
 
 #: .\core\templates\core\info.html:54
 msgid "Упрощенный порядок получения визы"
@@ -735,7 +729,7 @@ msgstr ""
 " <span>3 working days</span>,\n"
 "does not require an invitation from the Ministry of Foreign Affairslegal/"
 "individual from the Republic\n"
-"Uzbekistan:\n"
+"Uzbekistan:"
 
 #: .\core\templates\core\info.html:61
 msgid ""
@@ -779,7 +773,7 @@ msgstr ""
 "Islands<br>Venezuela<br>Laos<br>Suriname<br>Vietnam<br>Lebanon<br>Thailand<br>Gabon</"
 "p>\n"
 " <p>Mauritius<br>Tonga<br>Guyana<br>Macedonia<br>Trinidad and "
-"Tobago<br>Ghana<br>Maldives<br>Tunisia</p>\n"
+"Tobago<br>Ghana<br>Maldives<br>Tunisia</p>"
 
 #: .\core\templates\core\info.html:73
 msgid ""
@@ -820,10 +814,9 @@ msgstr ""
 "A visa is issued upon personal application from foreignerscitizens in the "
 "appropriate\n"
 "<span>diplomatic mission or consulateRepublic of Uzbekistan</span>\n"
-"in their country of residence with the following list of documents:\n"
+"in their country of residence with the following list of documents:"
 
 #: .\core\templates\core\info.html:90
-
 msgid ""
 "<li><span>электронная визовая анкета</span> (в распечатанном и заполненном "
 "виде);</li>\n"
@@ -847,7 +840,7 @@ msgstr ""
 " </li>\n"
 " <li><span>1 color photo</span> (passport size);</li>\n"
 " <li><span>consular fee</span> (according to tariffs given in the section "
-"<span>Duty</span>)</li>\n"
+"<span>Duty</span>)</li>"
 
 #: .\core\templates\core\info.html:99
 msgid "Электронная туристическая виза"
@@ -872,10 +865,9 @@ msgstr ""
 "a fee of 2 <span>0 USD</span>.\n"
 " Electronic visa is provided in <span>PDF</span> format to the applicant's e-"
 "mail and is not pasted into\n"
-"passport.\n"
+"passport."
 
 #: .\core\templates\core\info.html:109
-
 msgid ""
 "<li>Длительность рассмотрения поданных документов или электронной заявки "
 "составляет\n"
@@ -894,7 +886,7 @@ msgstr ""
 " <li>The e-visa is valid for <span>90 days</span> from the date of issue.</"
 "li>\n"
 " <li>Duration of stay on the territory of Uzbekistan by electronic The visa "
-"is <span>30 days</span>.</li>\n"
+"is <span>30 days</span>.</li>"
 
 #: .\core\templates\core\info.html:117
 msgid ""
@@ -912,7 +904,7 @@ msgstr ""
 "data from the passport on the basis of which it is plannedentry into the "
 "Republic of Uzbekistan. In case of replacement\n"
 "passports during the validity period of the electronic visa, electronicYou "
-"need to get a visa again.\n"
+"need to get a visa again."
 
 #: .\core\templates\core\info.html:124
 msgid "Въезд с приглашением"
@@ -931,10 +923,9 @@ msgstr ""
 "<span>visa support</span>.\n"
 "For\n"
 "for visa support, you need to provideour company has the following list of "
-"documents:\n"
+"documents:"
 
 #: .\core\templates\core\info.html:133
-
 msgid ""
 "<li><span>Заполненную анкету для визовой поддержки <a href=\"\">(скачать)</"
 "a></span></li>\n"
@@ -945,7 +936,7 @@ msgstr ""
 " <li><span>Filled out application form for visa support <a href="
 "\"\">(download)</a></span></li>\n"
 " <li><span>A scanned copy of your passport</span></li>\n"
-" <li><span>A scanned copy of your employment certificate</span></li>\n"
+" <li><span>A scanned copy of your employment certificate</span></li>"
 
 #: .\core\templates\core\info.html:138 .\core\templates\core\info.html:186
 msgid ""
@@ -960,7 +951,7 @@ msgstr ""
 "the Ministry of Foreign Affairs of the Republic\n"
 "Uzbekistan in\n"
 " Tashkent which will review your documents within <span>7 working days</"
-"span>.\n"
+"span>."
 
 #: .\core\templates\core\info.html:144
 msgid ""
@@ -985,10 +976,9 @@ msgstr ""
 "<span>diplomatic mission or consulateThe Republic of Uzbekistan</span> in "
 "your country\n"
 "stay\n"
-"with a list of the following documents:\n"
+"with a list of the following documents:"
 
 #: .\core\templates\core\info.html:153
-
 msgid ""
 "<li><span>Оригинал паспорта</span> (срок действия которого должен превышать "
 "срок действия визы не менее\n"
@@ -1014,7 +1004,7 @@ msgstr ""
 " <li><span>2 color photographs</span> (passport size);</li>\n"
 " <li><span>Telex number</span> (sent to your email);</li>\n"
 " <li><span>Consular fee</span> (according to tariffs given in the section "
-"<span>Duty</span>)</li>\n"
+"<span>Duty</span>)</li>"
 
 #: .\core\templates\core\info.html:163
 msgid ""
@@ -1025,13 +1015,12 @@ msgstr ""
 "daysday</span>."
 
 #: .\core\templates\core\info.html:165
-
 msgid ""
 "<span>Оформление визовой поддержки прекращается если клиент отказывается от "
 "ранее забронированного пакета туристических услуг.</span>"
 msgstr ""
 " <span>Visa support is terminated if the client refuses a previously booked "
-"travel package.</span>\n"
+"travel package.</span>"
 
 #: .\core\templates\core\info.html:167
 msgid "Виза с оформлением в аэропорту"
@@ -1050,7 +1039,7 @@ msgstr ""
 "<span>no diplomatic mission or consulateRepublic of Uzbekistan</span>,\n"
 "then you will be able to obtain an entry visa upon arrival inIslam Karimov "
 "International Airport in\n"
-" <span>visa sector</span>.\n"
+" <span>visa sector</span>."
 
 #: .\core\templates\core\info.html:175
 msgid ""
@@ -1061,10 +1050,9 @@ msgid ""
 msgstr ""
 "To do this, you need to apply for visa support at ourthe company sent us the "
 "following list\n"
-"documents:\n"
+"documents:"
 
 #: .\core\templates\core\info.html:180
-
 msgid ""
 "<li><span>Заполненную анкету для визовой поддержки</span></li>\n"
 "                <li><span>Сканированную копию Вашего паспорта</span></li>\n"
@@ -1076,7 +1064,7 @@ msgstr ""
 " <li><span>Completed application form for visa support</span></li>\n"
 " <li><span>A scanned copy of your passport</span></li>\n"
 " <li><span>A scanned copy of your employment certificate</span></li>\n"
-" <li><span>Scanned copies of airline tickets or reservations</span></li>\n"
+" <li><span>Scanned copies of airline tickets or reservations</span></li>"
 
 #: .\core\templates\core\info.html:192
 msgid ""
@@ -1100,7 +1088,7 @@ msgstr ""
 "Based on you will be issued a visa upon arrival at the internationalIslam "
 "Karimov Airport in the sector\n"
 "visa\n"
-"provision of the Ministry of Foreign Affairs of the Republic of Uzbekistan.\n"
+"provision of the Ministry of Foreign Affairs of the Republic of Uzbekistan."
 
 #: .\core\templates\core\info.html:200
 msgid "Транзитная виза в Узбекистан"
@@ -1126,7 +1114,7 @@ msgstr ""
 "your country of residence <span>full list of documents</span> necessary for "
 "tourist registration\n"
 "visas, a\n"
-" also attach to it:\n"
+" also attach to it:"
 
 #: .\core\templates\core\info.html:211
 msgid "Визу государства следования"
@@ -1175,7 +1163,7 @@ msgstr ""
 "national airline Uzbekistan Airways both to Uzbekistan and tothird country</"
 "span>\n"
 " ),\n"
-" <span>short-term visa-free regime has been established.</span>\n"
+" <span>short-term visa-free regime has been established.</span>"
 
 #: .\core\templates\core\info.html:228
 msgid ""
@@ -1193,7 +1181,7 @@ msgstr ""
 " the countries listed below have introduced <span>visa-free entry for "
 "transit</span>through Uzbekistan for a period not\n"
 "more than\n"
-"for <span>5 days</span>\n"
+"for <span>5 days</span>"
 
 #: .\core\templates\core\info.html:235
 msgid ""
@@ -1271,7 +1259,6 @@ msgid "1. Однократные визы:"
 msgstr "1. Single entry visas:"
 
 #: .\core\templates\core\info.html:268
-
 msgid ""
 "<li>до 7 дней — 40 USD;</li>\n"
 "                <li>до 15 дней — 50 USD;</li>\n"
@@ -1285,7 +1272,7 @@ msgstr ""
 " <li>up to 30 days - 60 USD;</li>\n"
 " <li>up to 3 months - 80 USD;</li>\n"
 " <li>up to 6 months - 120 USD;</li>\n"
-" <li>up to 1 year - 160 USD.</li>\n"
+" <li>up to 1 year - 160 USD.</li>"
 
 #: .\core\templates\core\info.html:275
 msgid ""
@@ -1297,26 +1284,24 @@ msgid "2. Многократные визы:"
 msgstr "2. Multiple entry visas:"
 
 #: .\core\templates\core\info.html:278
-
 msgid ""
 "<li>до 6 месяцев — 150 USD;</li>\n"
 "                <li>до 1 года — 250 USD.</li>"
 msgstr ""
 " <li>up to 6 months - 150 USD;</li>\n"
-" <li>up to 1 year - 250 USD.</li>\n"
+" <li>up to 1 year - 250 USD.</li>"
 
 #: .\core\templates\core\info.html:281
 msgid "3. Транзитные визы:"
 msgstr "3. Transit visas:"
 
 #: .\core\templates\core\info.html:283
-
 msgid ""
 "<li>до 72 часов — 40 USD;</li>\n"
 "                <li>за двукратную транзитную визу — 50 USD.</li>"
 msgstr ""
 " <li>up to 72 hours - 40 USD;</li>\n"
-" <li>for a double-entry transit visa - 50 USD.</li>\n"
+" <li>for a double-entry transit visa - 50 USD.</li>"
 
 #: .\core\templates\core\info.html:286
 msgid "4. Групповые визы</span>(не менее 5 человек, исключая детей до 16 лет):"
@@ -1325,7 +1310,6 @@ msgstr ""
 "of age):"
 
 #: .\core\templates\core\info.html:288
-
 msgid ""
 "<li>до 15 дней — 15 USD с каждого человека;</li>\n"
 "                <li>до 30 дней — 25 USD с каждого человека.</li>"
@@ -1349,7 +1333,6 @@ msgid "ВАЖНО ЗНАТЬ"
 msgstr "IT IS IMPORTANT TO KNOW"
 
 #: .\core\templates\core\info.html:298
-
 msgid ""
 "Для иностранных граждан, не достигших <span>16-летнего возраста</span>, "
 "въезд в Республику\n"
@@ -1376,12 +1359,12 @@ msgstr ""
 " persons, but <span>no more than 90 days</span> from the date of entry into "
 "country. If the child is traveling with one of the\n"
 "parents\n"
-"It is advisable to have a notarized permission with youfor the departure of "
+"It is advisable to have a notarized permission with you for the departure of "
 "a child from his native country from his second\n"
 "parent\n"
-"to prevent possible misunderstandings at the airportdepartures.\n"
+"to prevent possible misunderstandings at the airport departures."
 
-#: .\core\templates\core\mission.html:10 .\templates\base.html:122
+#: .\core\templates\core\mission.html:10 .\templates\base.html:126
 msgid "Наша миссия"
 msgstr "Our mission"
 
@@ -1482,11 +1465,32 @@ msgstr ""
 "<li>Collaboration with Travelife and nature protection funds;</li>\n"
 "<li>Improving the professionalism of employees and the quality of services;</"
 "li>\n"
-"<li>Increasing interest in Uzbekistan in the world.</li>\n"
+"<li>Increasing interest in Uzbekistan in the world.</li>"
 
-#: .\core\templates\core\reviews.html:15 .\templates\base.html:38
+#: .\core\templates\core\reviews.html:15 .\templates\base.html:41
 msgid "Отзывы"
 msgstr "Reviews"
+
+#: .\core\templates\core\search_page.html:6
+#| msgid "Популярные туры"
+msgid "Найденные туры"
+msgstr "Popular tours"
+
+#: .\core\templates\core\search_page.html:15 .\templates\base.html:68
+msgid "Туры в Узбекистан с Centrum-Holidays"
+msgstr "Tours to Uzbekistan with Centrum-Holidays"
+
+#: .\core\templates\core\search_page.html:16 .\templates\base.html:69
+msgid "Откройте для себя сказочный Восток!"
+msgstr "Discover the fabulous East!"
+
+#: .\core\templates\core\search_page.html:18 .\templates\base.html:71
+msgid "Куда держим курс?"
+msgstr "Where are we headed?"
+
+#: .\core\templates\core\search_page.html:19 .\templates\base.html:72
+msgid "Поиск"
+msgstr "Search"
 
 #: .\core\templates\core\tour_detail.html:18
 msgid "Места посещения"
@@ -1499,30 +1503,6 @@ msgstr "Season"
 #: .\core\templates\core\tour_detail.html:23
 msgid "Звездность"
 msgstr "Stardom"
-
-#: .\core\templates\core\tour_detail.html:27
-msgid "ЗАБРОНИРОВАТЬ"
-msgstr "BOOK NOW"
-
-#: .\core\templates\core\tour_detail.html:28
-msgid "Цена от"
-msgstr "Price from"
-
-#: .\core\templates\core\tour_detail.html:29
-#, fuzzy
-#| msgid "Ваше имя"
-msgid "Ваше Имя"
-msgstr "Your name"
-
-#: .\core\templates\core\tour_detail.html:30
-#, fuzzy
-#| msgid "Ваш E-mail"
-msgid "Ваш email"
-msgstr "Your E-mail"
-
-#: .\core\templates\core\tour_detail.html:31
-msgid "Ваше сообщение"
-msgstr "your message"
 
 #: .\core\templates\core\tour_detail.html:34
 msgid "Детали"
@@ -1580,63 +1560,47 @@ msgstr "Hotels along the route"
 msgid "ТУРЫ В УЗБЕКИСТАН"
 msgstr "TOURS TO UZBEKISTAN"
 
-#: .\templates\base.html:36
+#: .\templates\base.html:39
 msgid "Туры"
 msgstr "Tours"
 
-#: .\templates\base.html:37
+#: .\templates\base.html:40
 msgid "Отели Узбекистана"
 msgstr "Hotels of Uzbekistan"
 
-#: .\templates\base.html:65
-msgid "Туры в Узбекистан с Centrum-Holidays"
-msgstr "Tours to Uzbekistan with Centrum-Holidays"
-
-#: .\templates\base.html:66
-msgid "Откройте для себя сказочный Восток!"
-msgstr "Discover the fabulous East!"
-
-#: .\templates\base.html:67
-msgid "Куда держим курс?"
-msgstr "Where are we headed?"
-
-#: .\templates\base.html:68
-msgid "Поиск"
-msgstr "Search"
-
-#: .\templates\base.html:72
+#: .\templates\base.html:76
 msgid "лет на рынке"
 msgstr "years on the market"
 
-#: .\templates\base.html:75
+#: .\templates\base.html:79
 msgid "отелей"
 msgstr "hotels"
 
-#: .\templates\base.html:78
+#: .\templates\base.html:82
 msgid "гидов"
 msgstr "guides"
 
-#: .\templates\base.html:91
+#: .\templates\base.html:95
 msgid "Контакты"
 msgstr "Contacts"
 
-#: .\templates\base.html:120
+#: .\templates\base.html:124
 msgid "О компании"
 msgstr "About company"
 
-#: .\templates\base.html:123
+#: .\templates\base.html:127
 msgid "Карта сайта"
 msgstr "Site map"
 
-#: .\templates\base.html:129
+#: .\templates\base.html:133
 msgid "Информация туристам"
 msgstr "Information for tourists"
 
-#: .\templates\base.html:131
+#: .\templates\base.html:135
 msgid "Туры в Узбекистан"
 msgstr "Tours to Uzbekistan"
 
-#: .\templates\base.html:136
+#: .\templates\base.html:140
 msgid ""
 "Информация туристам Туры в Узбекистан Достопримечательности Наша компания "
 "имеет все необходимые лицензии и сертификаты качества."
@@ -1644,7 +1608,7 @@ msgstr ""
 "Information for tourists Tours to Uzbekistan Sights Our companyhas all the "
 "necessary licenses and quality certificates."
 
-#: .\templates\base.html:137
+#: .\templates\base.html:141
 msgid "Независимые отзывы о нас читайте на"
 msgstr "Read independent reviews about us at"
 

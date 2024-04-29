@@ -1,6 +1,5 @@
 from modeltranslation.translator import register, TranslationOptions
 
-
 from . import models
 
 
@@ -18,6 +17,7 @@ class HotelTranslationOptions(TranslationOptions):
 class BunTranslationOptions(TranslationOptions):
     fields = ('title',)
 
+
 @register(models.Tour)
 class TourTranslationOptions(TranslationOptions):
     fields = ('title', 'short_description', 'full_description', 'full_description2')
@@ -25,7 +25,37 @@ class TourTranslationOptions(TranslationOptions):
 
 @register(models.TourWithPrice)
 class TourWithPriceTranslationOptions(TranslationOptions):
-    fields = ('title', 'full_description')
+    fields = ('title', 'full_description', 'season')
+
+
+@register(models.PlacesTourWithPrice)
+class PlacesTourWithPriceTranslationOptions(TranslationOptions):
+    fields = ('place',)
+
+
+@register(models.DayTourWithPrice)
+class DayTourWithPriceTranslationOptions(TranslationOptions):
+    fields = ('name', 'descr')
+
+
+@register(models.AddonTourWithPrice)
+class AddonTourWithPriceTranslationOptions(TranslationOptions):
+    fields = ('name', 'descr')
+
+
+@register(models.TourCondition)
+class TourConditionTranslationOptions(TranslationOptions):
+    fields = ('text',)
+
+
+@register(models.TourPriceInclude)
+class TourPriceIncludeTranslationOptions(TranslationOptions):
+    fields = ('text',)
+
+
+@register(models.TourPriceDoesNotInclude)
+class TourPriceDoesNotIncludeTranslationOptions(TranslationOptions):
+    fields = ('text',)
 
 
 @register(models.Advantage)

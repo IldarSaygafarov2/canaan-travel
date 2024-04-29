@@ -10,23 +10,24 @@ class ReviewAdmin(TranslationAdmin):
     list_display = ('author', 'text')
 
 
+
 # TourWithPrice inlines start
-class PlacesTourWithPriceInline(admin.TabularInline):
+class PlacesTourWithPriceInline(TranslationTabularInline):
     model = models.PlacesTourWithPrice
     extra = 1
 
 
-class DayTourWithPriceInline(admin.TabularInline):
+class DayTourWithPriceInline(TranslationTabularInline):
     model = models.DayTourWithPrice
     extra = 1
 
 
-class AddonTourWithPriceInline(admin.TabularInline):
+class AddonTourWithPriceInline(TranslationTabularInline):
     model = models.AddonTourWithPrice
     extra = 1
 
 
-class TourConditionInline(admin.TabularInline):
+class TourConditionInline(TranslationTabularInline):
     model = models.TourCondition
     extra = 1
 
@@ -36,12 +37,12 @@ class TourHotelInline(admin.TabularInline):
     extra = 1
 
 
-class TourPriceIncludeInline(admin.TabularInline):
+class TourPriceIncludeInline(TranslationTabularInline):
     model = models.TourPriceInclude
     extra = 1
 
 
-class TourPriceDoesNotIncludeInline(admin.TabularInline):
+class TourPriceDoesNotIncludeInline(TranslationTabularInline):
     model = models.TourPriceDoesNotInclude
     extra = 1
 
