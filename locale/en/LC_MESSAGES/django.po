@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 20:49+0500\n"
+"POT-Creation-Date: 2024-04-30 14:37+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -304,10 +304,8 @@ msgid "Ваше сообщение"
 msgstr "your message"
 
 #: .\core\templates\core\hotel_detail.html:56
-#, fuzzy
-#| msgid "Мы рекомендуем"
 msgid "Рекомендации"
-msgstr "We recommend"
+msgstr "Recommendation"
 
 #: .\core\templates\core\hotel_detail.html:64
 #: .\core\templates\core\hotels.html:23
@@ -1472,7 +1470,6 @@ msgid "Отзывы"
 msgstr "Reviews"
 
 #: .\core\templates\core\search_page.html:6
-#| msgid "Популярные туры"
 msgid "Найденные туры"
 msgstr "Popular tours"
 
@@ -1660,18 +1657,18 @@ msgid "&lsaquo; Prev"
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:220
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
 msgid "The install worked successfully! Congratulations!"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
 #, python-format
 msgid ""
 "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
 "target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
 #, python-format
 msgid ""
 "You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
@@ -1680,34 +1677,28 @@ msgid ""
 "URLs."
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
 msgid "Django Documentation"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
 msgid "Topics, references, &amp; how-to’s"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:238
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
 msgid "Tutorial: A Polling App"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
 msgid "Get started with Django"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:247
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
 msgid "Django Community"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
 msgid "Connect, get help, or contribute"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
-#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
-#, python-format
-msgid "Index of %(directory)s"
 msgstr ""
 
 #~ msgid "Достопримечательности"
