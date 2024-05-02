@@ -14,8 +14,8 @@
     <div class="header__content">
       <h1 class="header__title">{% trans 'Туры в Узбекистан с Centrum-Holidays' %}</h1>
       <h2 class="header__subtitle">{% trans 'Откройте для себя сказочный Восток!' %}</h2>
-      <form action="" class="header__form">
-        <input type="text" placeholder="{% trans 'Куда держим курс?' %}">
+      <form action="{% url 'search' %}" class="header__form">
+        <input type="text" name="q" placeholder="{% trans 'Куда держим курс?' %}">
           <button>{% trans 'Поиск' %}</button>
         </form>
     </div>
