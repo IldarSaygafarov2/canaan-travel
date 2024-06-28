@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "canaantravel.pythonanywhere.com",
     "127.0.0.1",
-    "95.130.227.98",
+    "45.138.158.114",
     "centrum.travel",
 ]
 CSRF_TRUSTED_ORIGINS = ["https://centrum.travel"]
